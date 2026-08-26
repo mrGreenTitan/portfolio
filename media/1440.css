@@ -227,4 +227,86 @@
   }
 
   /* page work end */
+
+  /* deacorat elements start */
+
+  .decor-one {
+    right: clamp(-320px, calc(-371.515px + 6.061vw), -280px);
+    top: clamp(-320px, calc(24.0385vw - 516.1538px), -170px);
+  }
+
+  .decor-one > .wrap > .texture {
+    width: clamp(792px, calc(15.1515vw + 654px), 872px);
+    height: 805px;
+  }
+
+  .decor-one > .wrap > .cube {
+    width: clamp(400px, calc(48.0769vw + 7.693px), 700px);
+    height: clamp(400px, calc(48.0769vw + 7.693px), 700px);
+    left: clamp(25px, 304.23px - 19.39vw, 146px);
+    top: clamp(-170px, 499.23px - 46.47vw, 120px);
+  }
+
+  .decor-two {
+    left: clamp(-70px, -4.808vw - 0.769px, -40px);
+    top: clamp(55px, -12.019vw + 228.077px, 130px);
+  }
+
+  .decor-two > .cube {
+    width: clamp(500px, 56.09vw + 42.308px, 850px);
+    height: clamp(500px, 56.09vw + 42.308px, 850px);
+  }
+
+  .decor-three {
+    top: clamp(-200px, -15.705vw + 26.154px, -102px);
+    left: clamp(-500px, -17.628vw - 246.154px, -390px);
+  }
+
+  .decor-three > .wrap > span {
+    width: clamp(1100px, 32.051vw + 838.462px, 1300px);
+    height: clamp(1100px, 32.051vw + 838.462px, 1300px);
+  }
+
+  .decor-three > .wrap > .texture {
+    width: clamp(950px, 26.603vw + 732.885px, 1116px);
+    height: clamp(950px, 26.603vw + 732.885px, 1116px);
+  }
+
+  .decor-four {
+    top: clamp(450px, -16.026vw + 680.769px, 550px);
+    left: clamp(-450px, -16.026vw - 219.231px, -350px);
+  }
+
+  .decor-four > .wrap > span {
+    width: clamp(800px, 32.051vw + 538.462px, 1000px);
+    height: clamp(800px, 32.051vw + 538.462px, 1000px);
+  }
+
+  .decor-four > .wrap > .texture {
+    width: clamp(700px, 24.038vw + 503.846px, 850px);
+    height: clamp(700px, 24.038vw + 503.846px, 850px);
+  }
+
+  .decor-five {
+    bottom: clamp(-820px, -1107.69px + 35.26vw, -600px);
+    right: clamp(-500px, -565.38px + 8.01vw, -450px);
+  }
+
+  .decor-five > .wrap > span {
+    width: 1300px;
+    height: 1300px;
+  }
+
+  .decor-five > .wrap > .texture {
+    width: 1000px;
+    height: 1000px;
+  }
+
+  .decor-five > .wrap > .cube {
+    width: clamp(330px, 42.31px + 35.26vw, 550px);
+    left: clamp(60px, 313.85px - 17.63vw, 170px);
+    bottom: clamp(330px, 653.08px - 22.44vw, 470px);
+  }
+
+  /* deacorat elements end */
 }

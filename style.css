@@ -164,7 +164,6 @@ header {
 
 .header-cont {
   position: relative;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -269,6 +268,11 @@ header {
   border-radius: 80px;
 }
 
+.header-cont > nav {
+  position: relative;
+  z-index: 10;
+}
+
 .header-cont > nav > ul {
   display: flex;
   align-items: flex-end;
@@ -291,6 +295,7 @@ main {
 }
 
 section.hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 34px;
@@ -845,3 +850,239 @@ section.works > .works-wrap > .bl-wr > .bl-r > div > ul > li::marker {
 }
 
 /* page work end */
+
+/* deacorat elements start */
+
+.decor-one {
+  position: absolute;
+  right: -280px;
+  top: -170px;
+  z-index: -1;
+}
+
+.decor-one > .wrap {
+  position: relative;
+}
+
+.decor-one > .wrap > span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  filter: blur(40px);
+  will-change: transform;
+  transform: translate(-50%, -50%) translateZ(0);
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(120, 12, 255, 0.45) 0%,
+    rgba(120, 12, 255, 0.35) 25%,
+    rgba(120, 12, 255, 0.1) 60%,
+    rgba(120, 12, 255, 0) 95%
+  );
+
+  pointer-events: none;
+  z-index: -4;
+}
+
+.decor-one > .wrap > .texture {
+  position: relative;
+  z-index: -5;
+  width: 872px;
+  height: 805px;
+}
+
+.decor-one > .wrap > .texture > img,
+.decor-one > .wrap > .cube > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.decor-one > .wrap > .cube {
+  position: absolute;
+  z-index: -3;
+  width: 700px;
+  height: 700px;
+  left: 25px;
+  top: -170px;
+}
+
+.decor-two {
+  position: absolute;
+  z-index: -1;
+  left: -70px;
+  top: 55px;
+}
+
+.decor-two > .cube {
+  width: 850px;
+  height: 850px;
+}
+
+.decor-two > .cube > img {
+  width: 100%;
+  height: 100%;
+}
+
+.decor-two > .cube > img:nth-of-type(1) {
+  display: block;
+}
+
+.decor-two > .cube > img:nth-of-type(2) {
+  display: none;
+}
+
+.decor-three {
+  position: absolute;
+  top: -200px;
+  left: -500px;
+  z-index: -1;
+}
+
+.decor-three > .wrap {
+  position: relative;
+}
+
+.decor-three > .wrap > span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  filter: blur(75px);
+  will-change: transform;
+  transform: translate(-50%, -50%) translateZ(0);
+  width: 1300px;
+  height: 1300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 255, 255, 0.8) 0%,
+    rgba(0, 255, 255, 0.55) 25%,
+    rgba(0, 255, 255, 0.1) 60%,
+    rgba(0, 255, 255, 0) 95%
+  );
+  pointer-events: none;
+  z-index: -4;
+}
+
+.decor-three > .wrap > .texture {
+  position: relative;
+  z-index: -5;
+  width: 1116px;
+  height: 1116px;
+}
+
+.decor-three > .wrap > .texture > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.decor-four {
+  position: absolute;
+  top: 450px;
+  left: -450px;
+  z-index: -1;
+}
+
+.decor-four > .wrap {
+  position: relative;
+}
+
+.decor-four > .wrap > span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  filter: blur(75px);
+  will-change: transform;
+  transform: translate(-50%, -50%) translateZ(0);
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(55, 0, 255, 0.45) 0%,
+    rgba(55, 0, 255, 0.35) 25%,
+    rgba(55, 0, 255, 0.1) 60%,
+    rgba(55, 0, 255, 0) 95%
+  );
+  pointer-events: none;
+  z-index: -4;
+}
+
+.decor-four > .wrap > .texture {
+  position: relative;
+  z-index: -5;
+  width: 850px;
+  height: 850px;
+}
+
+.decor-four > .wrap > .texture > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.decor-five {
+  position: absolute;
+  bottom: -600px;
+  right: -450px;
+  z-index: -1;
+}
+
+.decor-five > .wrap {
+  position: relative;
+}
+
+.decor-five > .wrap > span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  filter: blur(75px);
+  will-change: transform;
+  transform: translate(-50%, -50%) translateZ(0);
+  width: 1300px;
+  height: 1300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(55, 0, 255, 0.75) 15%,
+    rgba(55, 0, 255, 0.25) 35%,
+    rgba(55, 0, 255, 0.1) 60%,
+    rgba(55, 0, 255, 0) 95%
+  );
+  pointer-events: none;
+  z-index: -4;
+}
+
+.decor-five > .wrap > .texture {
+  position: relative;
+  z-index: -5;
+  width: 1000px;
+  height: 1000px;
+}
+
+.decor-five > .wrap > .texture > img,
+.decor-five > .wrap > .cube > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.decor-five > .wrap > .cube {
+  position: absolute;
+  z-index: -3;
+  width: 550px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  left: 60px;
+  bottom: 330px;
+}
+
+/* deacorat elements end */

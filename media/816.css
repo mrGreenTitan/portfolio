@@ -335,4 +335,115 @@
     font-size: clamp(12px, calc(0.806vw + 9.419px), 16px);
   }
   /* page work end */
+
+  /* deacorat elements start */
+
+  .decor-one {
+    right: clamp(-320px, -15.121vw - 196.613px, -245px);
+    top: clamp(-320px, -29.234vw - 81.452px, -175px);
+  }
+
+  .decor-one > .wrap > span {
+    width: clamp(700px, 60.484vw + 506.452px, 1000px);
+    height: clamp(700px, 60.484vw + 506.452px, 1000px);
+  }
+
+  .decor-one > .wrap > .texture {
+    width: clamp(564px, 45.968vw + 26.056rem, 792px);
+    height: clamp(530px, 55.444vw + 22.036rem, 805px);
+  }
+
+  .decor-one > .wrap > .cube {
+    width: clamp(250px, 30.242vw + 153.226px, 400px);
+    height: clamp(250px, 30.242vw + 153.226px, 400px);
+    left: clamp(122px, 4.839vw + 106.516px, 146px);
+    top: clamp(50px, 14.113vw + 4.839px, 120px);
+  }
+
+  .decor-two {
+    left: clamp(-40px, -3.024vw - 15.323px, -25px);
+    top: clamp(48px, 15.524vw - 1.677px, 125px);
+  }
+
+  .decor-two > .cube {
+    width: clamp(200px, 66.532vw - 12.903px, 530px);
+    height: clamp(200px, 66.532vw - 12.903px, 530px);
+  }
+
+  .decor-two > .cube > img:nth-of-type(1) {
+    display: none;
+  }
+
+  .decor-two > .cube > img:nth-of-type(2) {
+    display: block;
+  }
+
+  .decor-three {
+    top: clamp(-102px, -11.492vw - 8.226px, -45px);
+    left: clamp(-390px, -30.242vw - 143.226px, -240px);
+  }
+
+  .decor-three > .wrap > span {
+    width: clamp(650px, 90.726vw + 359.677px, 1100px);
+    height: clamp(650px, 90.726vw + 359.677px, 1100px);
+  }
+
+  .decor-three > .wrap > .texture {
+    width: clamp(500px, 90.726vw + 209.677px, 950px);
+    height: clamp(500px, 90.726vw + 209.677px, 950px);
+  }
+
+  .decor-four {
+    top: clamp(290px, 52.419vw + 122.258px, 550px);
+    left: clamp(-350px, -34.274vw - 70.323px, -180px);
+  }
+
+  .decor-four > .wrap > span {
+    width: clamp(400px, 80.645vw + 141.935px, 800px);
+    height: clamp(400px, 80.645vw + 141.935px, 800px);
+  }
+
+  .decor-four > .wrap > .texture {
+    width: clamp(300px, 80.645vw + 41.935px, 700px);
+    height: clamp(300px, 80.645vw + 41.935px, 700px);
+  }
+
+  .decor-five {
+    /* При 320px = -300px, при 816px = -820px */
+    bottom: clamp(-820px, 35.48px - 104.84vw, -300px);
+    right: clamp(-500px, -22.58px - 58.47vw, -210px);
+  }
+
+  .decor-five > .wrap > span {
+    /* При 320px = 750px, при 816px = 1300px */
+    width: clamp(750px, 395.16px + 110.89vw, 1300px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+
+    background: radial-gradient(
+      circle at center,
+      rgba(55, 0, 255, 0.75) 15%,
+      rgba(55, 0, 255, 0.15) 25%,
+      rgba(55, 0, 255, 0.1) 60%,
+      rgba(55, 0, 255, 0) 95%
+    );
+  }
+
+  .decor-five > .wrap > .texture {
+    /* При 320px = 500px, при 816px = 1000px */
+    width: clamp(500px, 177.42px + 100.81vw, 1000px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+
+  .decor-five > .wrap > .cube {
+    /* При 320px = 180px, при 816px = 330px */
+    width: clamp(180px, 83.23px + 30.24vw, 330px);
+    /* При 320px = 168px, при 816px = 170px */
+    left: clamp(168px, 166.71px + 0.4vw, 170px);
+    /* При 320px = 134px, при 816px = 470px */
+    bottom: clamp(134px, -82.77px + 67.74vw, 470px);
+  }
+
+  /* deacorat elements end */
 }
