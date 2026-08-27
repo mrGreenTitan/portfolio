@@ -489,6 +489,7 @@ section.about > .bl-r > .wrap-pers > img {
 }
 
 section.skills {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 132px;
@@ -1085,4 +1086,64 @@ section.works > .works-wrap > .bl-wr > .bl-r > div > ul > li::marker {
   bottom: 330px;
 }
 
+.decor-six {
+  position: absolute;
+  z-index: -1;
+  top: 420px;
+  right: -245px;
+}
+
+.decor-six > .cube {
+  width: 520px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.decor-six > .cube > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.decor-seven {
+  position: absolute;
+  z-index: -1;
+  top: 500px;
+  right: 110px;
+}
+
+.decor-seven > .cube {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.decor-seven > .cube > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.decor-eight {
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+  left: -250px;
+}
+
+.decor-eight > .cube {
+  width: 700px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.decor-eight > .cube > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.decor-nine {
+  display: none;
+}
 /* deacorat elements end */

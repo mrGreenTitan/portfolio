@@ -308,5 +308,32 @@
     bottom: clamp(330px, 653.08px - 22.44vw, 470px);
   }
 
+  .decor-six {
+    top: clamp(420px, -1.603vw + 443.077px, 430px);
+    right: clamp(-245px, -19.231vw + 31.923px, -125px);
+  }
+
+  .decor-six > .cube {
+    width: clamp(320px, 32.051vw + 58.462px, 520px);
+  }
+
+  .decor-seven {
+    top: clamp(500px, -96.154vw + 1884.615px, 1100px);
+    right: clamp(0px, 17.628vw - 143.846px, 110px);
+  }
+
+  .decor-seven > .cube {
+    width: clamp(160px, 22.436vw - 23.077px, 300px);
+  }
+
+  .decor-eight {
+    top: clamp(50px, -59.295vw + 903.846px, 420px);
+    left: clamp(-250px, -16.026vw - 19.231px, -150px);
+  }
+
+  .decor-eight > .cube {
+    width: clamp(400px, 48.077vw + 7.692px, 700px);
+  }
+
   /* deacorat elements end */
 }
