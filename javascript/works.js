@@ -26,7 +26,7 @@ export const worksInfo = [
       "Інтерактивне навігаційне меню",
       "Інтеграція форми заявки",
     ],
-    image: "image-work-1.jpg",
+    // image: "image-work-1.jpg",
   },
   {
     id: 1,
@@ -61,7 +61,7 @@ export const worksInfo = [
       "Блок CTA з високою конверсією",
       "Презентація фінтех-продукту",
     ],
-    image: "image-work-2.jpg",
+    // image: "image-work-2.jpg",
   },
   {
     id: 2,
@@ -91,7 +91,7 @@ export const worksInfo = [
       "Форма пошуку та бронювання",
       "Динамічні каруселі напрямків",
     ],
-    image: "image-work-3.jpg",
+    // image: "image-work-3.jpg",
   },
   {
     id: 3,
@@ -122,7 +122,7 @@ export const worksInfo = [
       "Картки тарифів та послуг",
       "Інтеграція контактної форми",
     ],
-    image: "image-work-4.jpg",
+    // image: "image-work-4.jpg",
   },
   {
     id: 4,
@@ -154,7 +154,7 @@ export const worksInfo = [
       "Інтеграція контактної форми",
       "Функціонал завантаження резюме/CV",
     ],
-    image: "image-work-5.jpg",
+    // image: "image-work-5.jpg",
   },
   {
     id: 5,
@@ -185,7 +185,7 @@ export const worksInfo = [
       "Архітектура цільової сторінки продукту",
       "Інтеграція CTA-блоку для демо з високою конверсією",
     ],
-    image: "image-work-6.jpg",
+    // image: "image-work-6.jpg",
   },
   {
     id: 6,
@@ -213,7 +213,7 @@ export const worksInfo = [
       "Анімації на основі прокручування (Scroll-Driven Animations)",
       "Інтеграція контактної форми",
     ],
-    image: "image-work-7.jpg",
+    // image: "image-work-7.jpg",
   },
   {
     id: 7,
@@ -242,7 +242,7 @@ export const worksInfo = [
       "Інтерактивне навігаційне меню",
       "Динамічна карусель напрямків",
     ],
-    image: "image-work-8.jpg",
+    // image: "image-work-8.jpg",
   },
 ];
 
