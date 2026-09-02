@@ -64,7 +64,7 @@ worksWrap.innerHTML = worksInfo
       <div class="bl-wr">
 
         <div class="bl-l">
-          <span><a href="#">${work.title}</a></span>
+          <span><a href="${work.link}">${work.title}</a></span>
 
           <div>
             <img src="./img/${work.image}" alt="${work.title}">
@@ -88,6 +88,8 @@ worksWrap.innerHTML = worksInfo
               ${work.ul.map((item) => `<li>${item}</li>`).join("")}
             </ul>
           </div>
+
+          <a href="${work.link}">${"ВІДКРИТИ САЙТ"}</a>
 
         </div>
 
