@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Orbitron:wght@400..900&display=swap");
 
 /*
 
@@ -14,12 +14,23 @@ Bold - 700
 Extra Bold - 800
 Black/Heavy - 900
 
+letter-spacing: 0.0012em;
 
 // <weight>: Use a value from 400 to 900
 // <uniquifier>: Use a unique and descriptive class name
 
 .orbitron-<uniquifier> {
   font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -70,8 +81,9 @@ textarea {
 body {
   position: relative;
   overflow-x: hidden;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Jura", sans-serif;
   font-size: 16px;
+  letter-spacing: 0.0012em;
   background-color: black;
   color: white;
 }
@@ -82,6 +94,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Orbitron", sans-serif;
   line-height: 1.4;
   font-style: normal;
   letter-spacing: 0.0012em;
@@ -281,8 +294,9 @@ header {
 }
 
 .header-cont > nav > ul > li > a {
+  font-family: "Jura", sans-serif;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.0012em;
   color: white;
@@ -317,7 +331,9 @@ section.hero > .bl-r > .hero-inf {
 }
 
 section.hero > .bl-r > .hero-inf > .hero-inf-text {
+  font-family: "Jura", sans-serif;
   font-size: 64px;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.0012em;
 }
@@ -328,6 +344,7 @@ section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta {
 }
 
 section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button {
+  font-family: "Jura", sans-serif;
   display: flex;
   align-items: center;
   height: 93px;
@@ -345,6 +362,7 @@ section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1) {
 
   font-size: 32px;
   font-weight: 600;
+  letter-spacing: 0.0012em;
 
   background: rgb(255 255 255 / 50%);
   border-radius: 50px;
@@ -357,7 +375,7 @@ section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1) {
     inset 0 -1px 0 rgb(255 255 255 / 15%),
     0 8px 30px rgb(0 0 0 / 25%);
 
-  color: white;
+  color: black;
 }
 
 section.hero
@@ -386,7 +404,8 @@ section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2) {
   isolation: isolate;
 
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 0.0012em;
 
   color: white;
 
@@ -459,13 +478,15 @@ section.about > .bl-l {
 }
 
 section.about > .bl-l > div {
+  font-family: "Jura", sans-serif;
   font-size: 64px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 section.about > .bl-l > p {
+  font-family: "Jura", sans-serif;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 section.about > .bl-r {
@@ -514,8 +535,9 @@ section.skills > .bl-r {
 }
 
 section.skills > div {
+  font-family: "Jura", sans-serif;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 section.skills > div > ul {
@@ -551,9 +573,9 @@ section.skills > div > ul > li {
     inset 0 0 0 1px #595959,
     inset 0 1px 0 rgb(255 255 255 / 18%),
     inset 0 -1px 0 rgb(0 0 0 / 15%);
-
+  font-family: "Jura", sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 section.skills > div > ul > li::before {
@@ -589,8 +611,9 @@ section.contact .wrap-cont {
 }
 
 section.contact .wrap-cont > .bl-contact {
+  font-family: "Jura", sans-serif;
   font-size: 64px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 section.contact .wrap-cont > .wrap-inputs {
@@ -610,8 +633,9 @@ section.contact .wrap-cont > .wrap-inputs > div {
 }
 
 section.contact .wrap-cont > .wrap-inputs > div > label {
+  font-family: "Jura", sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
 }
 
@@ -622,8 +646,9 @@ section.contact .wrap-cont > .wrap-inputs > div > input {
   height: 56px;
   padding: 0 24px;
   border-radius: 80px;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
@@ -680,7 +705,7 @@ section.contact .wrap-cont > .wrap-forcontacts > .wrap-inp-social > input {
   height: 56px;
   padding: 0 24px;
   border-radius: 80px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.1);
@@ -713,13 +738,14 @@ section.contact .wrap-cont > .wrap-btn-sumb > button {
   isolation: isolate;
   font-size: 24px;
   font-weight: 600;
-  background: rgb(255 255 255 / 70%);
-  border-radius: 50px;
-  backdrop-filter: blur(5px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  background: rgb(0 0 0 / 20%);
+  border: 1px solid #c9c9c9;
+  backdrop-filter: blur(4px) saturate(150%);
+  -webkit-backdrop-filter: blur(4px) saturate(150%);
   box-shadow:
-    inset 0 1px 0 rgb(255 255 255 / 60%),
-    inset 0 -1px 0 rgb(255 255 255 / 15%),
+    inset 0 1px 0 rgb(255 255 255 / 55%),
+    inset 0 -1px 0 rgb(0 0 0 / 30%),
+    inset 1px 0 0 rgb(255 255 255 / 18%),
     0 8px 30px rgb(0 0 0 / 25%);
   color: white;
 }
@@ -774,6 +800,7 @@ section.works > .works-wrap {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 
@@ -819,35 +846,54 @@ section.works > .works-wrap > .bl-wr > .bl-l > div > img {
 }
 
 section.works > .works-wrap > .bl-wr > .bl-r {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  max-width: 556px;
+  max-width: 575px;
   width: 100%;
 }
 
 section.works > .works-wrap > .bl-wr > .bl-r > p,
-section.works > .works-wrap > .bl-wr > .bl-r > div li {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 400;
+section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap > p,
+section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap div li {
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.024px;
 }
 
-section.works > .works-wrap > .bl-wr > .bl-r > div {
+section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap div {
   padding-left: 30px;
 }
 
-section.works > .works-wrap > .bl-wr > .bl-r > div > ul {
+section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap div > ul {
   display: flex;
   flex-direction: column;
   list-style-type: disc;
 }
 
-section.works > .works-wrap > .bl-wr > .bl-r > div > ul > li::marker {
+section.works
+  > .works-wrap
+  > .bl-wr
+  > .bl-r
+  > .bl-r-wrap
+  > div
+  > ul
+  > li::marker {
   font-size: 10px;
   vertical-align: middle;
+}
+
+section.works > .works-wrap > .bl-wr > .bl-r > span {
+  align-self: flex-end;
+  font-family: "Jura", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 section.works > .works-wrap > .bl-wr > .bl-r > a {
@@ -1390,7 +1436,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a::before {
 .decor-work-five {
   position: absolute;
   z-index: -1;
-  top: 5450px;
+  bottom: -500px;
   right: -530px;
 }
 
@@ -1529,16 +1575,20 @@ section.works > .works-wrap > .bl-wr > .bl-r > a::before {
 
 .work-cube-eight {
   position: absolute;
-  z-index: -1;
-  bottom: -10px;
-  right: 150px;
+  z-index: -2;
+  bottom: -80px;
+  right: 85px;
 }
 
 .work-cube-eight > img {
   display: block;
-  width: 720px;
+  width: 800px;
   aspect-ratio: 1 / 1;
   height: auto;
+}
+
+.work-cube-eight > img:nth-of-type(2) {
+  display: none;
 }
 
 /* decorat elements works page end */

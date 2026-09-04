@@ -77,6 +77,8 @@ worksWrap.innerHTML = worksInfo
 
           <p>${work.description.pTwo}</p>
 
+          <div class="bl-r-wrap">
+
           <p>${work.description.pThree}</p>
 
           <p>${work.description.pFour}</p>
@@ -88,6 +90,10 @@ worksWrap.innerHTML = worksInfo
               ${work.ul.map((item) => `<li>${item}</li>`).join("")}
             </ul>
           </div>
+
+          </div>
+
+          <span>${`Розгорнути`}</span>
 
           <a href="${work.link}">${"ВІДКРИТИ САЙТ"}</a>
 
