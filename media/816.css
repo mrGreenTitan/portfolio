@@ -336,7 +336,7 @@
   }
   /* page work end */
 
-  /* deacorat elements start */
+  /* decorat elements start */
 
   .decor-one {
     right: clamp(-320px, -15.121vw - 196.613px, -245px);
@@ -531,9 +531,9 @@
     top: clamp(560px, 104.839vw + 224.516px, 1080px);
   }
 
-  /* deacorat elements end */
+  /* decorat elements end */
 
-  /* deacorat elements works page start */
+  /* decorat elements works page start */
 
   .decor-work-one {
     top: clamp(1620px, calc(90.7258vw + 1329.6774px), 2070px);
@@ -640,5 +640,114 @@
     );
   }
 
-  /* deacorat elements works page end */
+  .work-cube-one {
+    top: clamp(745px, calc(670.8064516129032px + 23.18548387096774vw), 860px);
+    left: clamp(
+      -97px,
+      calc(-3.225806451612903px - 11.491935483870968vw),
+      -40px
+    );
+  }
+
+  .work-cube-one > img {
+    width: clamp(
+      100px,
+      calc(35.483870967741936px + 20.161290322580644vw),
+      200px
+    );
+  }
+
+  .work-cube-two {
+    top: clamp(
+      1565px,
+      calc(1374.032258064516px + 59.475806451612904vw),
+      1860px
+    );
+    right: clamp(
+      -110px,
+      calc(5.161290322580648px - 14.112903225806452vw),
+      -40px
+    );
+  }
+
+  .work-cube-two > img {
+    width: clamp(
+      150px,
+      calc(51.225806451612904px + 30.241935483870968vw),
+      300px
+    );
+  }
+
+  .work-cube-three {
+    top: 2155px;
+    left: -350px;
+  }
+
+  .work-cube-three > img {
+    width: 200px;
+  }
+
+  .work-cube-four {
+    top: clamp(
+      4015px,
+      calc(3921.532258064516px + 29.233870967741936vw),
+      4160px
+    );
+    right: clamp(
+      -90px,
+      calc(-57.096774193548384px - 4.032258064516129vw),
+      -70px
+    );
+  }
+
+  .work-cube-four > img {
+    width: clamp(
+      200px,
+      calc(135.48387096774195px + 20.161290322580648vw),
+      300px
+    );
+  }
+
+  .work-cube-five {
+    display: none;
+    top: 3850px;
+    left: -450px;
+  }
+
+  .work-cube-five > img {
+    width: 250px;
+  }
+
+  .work-cube-six {
+    top: 6455px;
+
+    right: clamp(
+      -515px,
+      calc(-811.7741935483871px + 92.74193548387096vw),
+      -55px
+    );
+  }
+
+  .work-cube-six > img {
+    width: 300px;
+  }
+
+  .work-cube-seven {
+    top: clamp(
+      4875px,
+      calc(4276.245967741936px + 182.45967741935484vw),
+      5780px
+    );
+    left: clamp(
+      -87px,
+      calc(-55.42943548387097px - 3.8306451612903225vw),
+      -68px
+    );
+  }
+
+  .work-cube-seven > img {
+    width: clamp(150px, calc(103.6875px + 14.11290322580645vw), 220px);
+  }
+
+  /* decorat elements works page end */
 }

@@ -122,6 +122,7 @@ export const worksInfo = [
   },
   {
     id: 4,
+    link: "https://mrgreentitan.github.io/portfolio-site-personalCV",
     title:
       "Andriy Bol. — Responsive Portfolio Website for a Frontend Developer",
     description: {
@@ -153,6 +154,7 @@ export const worksInfo = [
   },
   {
     id: 5,
+    link: "https://mrgreentitan.github.io/portfolio-site-Modern-Analytics-Product-Launch",
     title: "Area — Responsive Landing Page for an Analytics Product Launch",
     description: {
       pOne: "Area — адаптивний сайт для запуску аналітичного продукту :",
@@ -182,6 +184,7 @@ export const worksInfo = [
   },
   {
     id: 6,
+    link: "https://mrgreentitan.github.io/portfolio-site-Alex-Portfolio-page/",
     title: "Alex Portfolio — Responsive Web Developer Portfolio Website",
     description: {
       pOne: "Alex Portfolio — адаптивний сайт-портфоліо веброзробника :",
@@ -210,6 +213,7 @@ export const worksInfo = [
   },
   {
     id: 7,
+    link: "https://mrgreentitan.github.io/portfolio-site-travel-alphine/",
     title: "WANDER.gig — Responsive Website for a Philippine Travel Service",
     description: {
       pOne: "WANDER.gig — адаптивний сайт для туристичного сервісу по Філіппінах :",
@@ -237,5 +241,3 @@ export const worksInfo = [
     image: "w8.webp",
   },
 ];
-
-console.log("hello, we load worksInfo");

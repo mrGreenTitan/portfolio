@@ -894,7 +894,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a::before {
 
 /* page work end */
 
-/* deacorat elements start */
+/* decorat elements start */
 
 .decor-one {
   position: absolute;
@@ -1188,9 +1188,9 @@ section.works > .works-wrap > .bl-wr > .bl-r > a::before {
 .decor-nine {
   display: none;
 }
-/* deacorat elements end */
+/* decorat elements end */
 
-/* deacorat elements works page start */
+/* decorat elements works page start */
 
 .decor-work-one {
   position: absolute;
@@ -1429,4 +1429,116 @@ section.works > .works-wrap > .bl-wr > .bl-r > a::before {
   z-index: -4;
 }
 
-/* deacorat elements works page end */
+.work-cube-one {
+  position: absolute;
+  z-index: -1;
+  top: 560px;
+  left: -145px;
+}
+
+.work-cube-one > img {
+  display: block;
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.work-cube-two {
+  position: absolute;
+  z-index: -1;
+  top: 1140px;
+  right: -90px;
+}
+
+.work-cube-two > img {
+  display: block;
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.work-cube-three {
+  position: absolute;
+  z-index: -1;
+  top: 2155px;
+  left: 0px;
+}
+
+.work-cube-three > img {
+  display: block;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.work-cube-four {
+  position: absolute;
+  z-index: -1;
+  top: 2900px;
+  right: -95px;
+}
+
+.work-cube-four > img {
+  display: block;
+  width: 400px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.work-cube-five {
+  position: absolute;
+  z-index: -1;
+  top: 3260px;
+  left: -120px;
+}
+
+.work-cube-five > img {
+  display: block;
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.work-cube-six {
+  position: absolute;
+  z-index: -1;
+  top: 4365px;
+  right: -115px;
+}
+
+.work-cube-six > img {
+  display: block;
+  width: 400px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.work-cube-seven {
+  position: absolute;
+  z-index: -1;
+  top: 4640px;
+  left: -125px;
+}
+
+.work-cube-seven > img {
+  display: block;
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.work-cube-eight {
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  right: 150px;
+}
+
+.work-cube-eight > img {
+  display: block;
+  width: 720px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+/* decorat elements works page end */
