@@ -253,7 +253,7 @@
 
   section.contact .wrap-cont > .wrap-inputs > div > input {
     height: clamp(44px, calc(36.2581px + 2.4194vw), 56px);
-    font-size: clamp(12px, calc(9.4194px + 0.8065vw), 16px);
+    font-size: clamp(12px, calc(6.83870967741935px + 1.61290322580645vw), 20px);
   }
 
   section.contact .wrap-cont > .wrap-forcontacts {
@@ -279,7 +279,6 @@
 
   section.contact .wrap-cont > .wrap-btn-sumb > button {
     height: clamp(44px, calc(31.7419px + 3.8306vw), 63px);
-    padding: 0 clamp(76px, calc(99.0323px - 2.8226vw), 90px);
   }
 
   /* page work start */
@@ -302,6 +301,7 @@
 
   section.works > .works-wrap {
     gap: clamp(78px, calc(14.516vw + 30.968px), 150px);
+    margin-top: 0;
   }
 
   section.works > .works-wrap > div:nth-child(even) {
@@ -690,7 +690,6 @@
   }
 
   .work-cube-three {
-    top: 2155px;
     left: -350px;
   }
 
@@ -776,6 +775,20 @@
 
   .work-cube-eight > img:nth-of-type(2) {
     display: block;
+  }
+
+  .work-cube-nine {
+    display: flex;
+    bottom: clamp(
+      660px,
+      calc(440.3225806451613px + 68.5483870967742vw),
+      1000px
+    );
+    left: clamp(-355px, calc(-561.451612903226px + 64.5161290322581vw), -35px);
+  }
+
+  .work-cube-nine > img {
+    width: clamp(100px, calc(35.4838709677419px + 20.1612903225806vw), 200px);
   }
 
   /* decorat elements works page end */

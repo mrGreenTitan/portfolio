@@ -96,7 +96,7 @@
     > .hero-inf
     > .hero-wrap-btn-cta
     > button:nth-of-type(1) {
-    font-size: clamp(28px, 0.641vw + 22.769px, 32px);
+    font-size: clamp(25px, calc(15.8387096774194px + 1.12179487179487vw), 32px);
   }
 
   section.hero
@@ -164,6 +164,14 @@
     margin-bottom: clamp(262px, calc(518.92px - 17.788vw), 373px);
   }
 
+  section.contact .wrap-cont > .bl-contact {
+    font-size: clamp(
+      62px,
+      calc(59.3870967741935px + 0.320512820512821vw),
+      64px
+    );
+  }
+
   /* page work start */
   header.works {
     margin-bottom: clamp(-224px, calc(-113.436px - 7.692vw), -176px);
@@ -196,6 +204,14 @@
 
   section.works > .works-wrap > .bl-wr > .bl-l > div {
     height: clamp(401px, calc(8.654vw + 330.385px), 455px);
+  }
+
+  section.works > .works-wrap > .bl-wr > .bl-r {
+    max-width: clamp(
+      500px,
+      calc(21.1538461538462px + 38.4615384615385vw),
+      575px
+    );
   }
 
   section.works > .works-wrap > .bl-wr > .bl-r > p,
@@ -440,7 +456,6 @@
   }
 
   .work-cube-three {
-    top: 2155px;
     left: clamp(-350px, calc(-807.6923076923077px + 56.08974358974359vw), 0px);
   }
 

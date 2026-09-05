@@ -52,3 +52,28 @@ function clickPageHome() {
 
 pageWorks.addEventListener("click", clickPageWorks);
 pageHome.addEventListener("click", clickPageHome);
+
+// Відкрити або закрити Роботи
+
+const WORKS_WRAP = document.querySelector(".works-wrap");
+
+if (WORKS_WRAP) {
+  const BL_RIGHTs = WORKS_WRAP.querySelectorAll(".bl-r");
+  BL_RIGHTs.forEach((bl) => {
+    let div = bl.querySelector(".bl-r-wrap");
+    let span = bl.querySelector("span");
+
+    if (div && span) {
+      let divHeight = div.offsetHeight + "px";
+      div.style.height = divHeight;
+
+      span.addEventListener("click", function () {
+        if (div.style.height === "0px") {
+          div.style.height = div.scrollHeight + "px";
+        } else {
+          div.style.height = "0px";
+        }
+      });
+    }
+  });
+}
