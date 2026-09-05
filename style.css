@@ -184,6 +184,117 @@ header {
   padding: 30px 0;
 }
 
+.header-cont > .lang-swapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 92px;
+  height: 36px;
+  padding: 8px 12px 15px;
+  border-radius: 20px;
+  left: 10px;
+  top: 29px;
+  font-weight: 700;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 10px 30px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  will-change: height;
+  transition:
+    height 0.3s ease,
+    background 0.4s ease,
+    transform 0.5s ease;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.header-cont > .lang-swapper:not(.open):has(> div:hover) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-cont > .lang-swapper:not(.open):has(> div:active) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header-cont > .lang-swapper.open {
+  height: 152px;
+}
+
+.header-cont > .lang-swapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.26),
+    rgba(255, 255, 255, 0.04) 55%,
+    transparent
+  );
+}
+
+.header-cont > .lang-swapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header-cont > .lang-swapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.header-cont > .lang-swapper > div > svg {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.header-cont > .lang-swapper.open > div > svg {
+  transform: rotate(180deg);
+}
+
+.header-cont > .lang-swapper > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-cont > .lang-swapper > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 20px;
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+}
+
+.header-cont > .lang-swapper > ul > li:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.header-cont > .lang-swapper > ul > li:active {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
 .header-cont > .wrap-btn-swap {
   position: relative;
   width: 66px;
@@ -294,12 +405,39 @@ header {
 }
 
 .header-cont > nav > ul > li > a {
+  position: relative;
   font-family: "Jura", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.0012em;
   color: white;
+  transition: opacity 0.7s ease;
+}
+
+.header-cont > nav > ul > li > a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transition:
+    width 0.3s ease,
+    opacity 0.5s ease;
+}
+
+.header-cont > nav > ul > li > a:hover::after {
+  width: 100%;
+}
+
+.header-cont > nav > ul > li > a:active {
+  opacity: 0.8;
+}
+
+.header-cont > nav > ul > li > a:active::after {
+  opacity: 0.8;
 }
 
 main {
@@ -313,6 +451,7 @@ section.hero {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  cursor: default;
 }
 
 section.hero > .bl-l > .hero-title {
@@ -859,9 +998,12 @@ section.works > .works-wrap > .bl-wr > .bl-r {
 }
 
 section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap {
-  height: auto;
+  height: 42px;
+  opacity: 0.3;
   overflow: hidden;
-  transition: height 2s ease;
+  transition:
+    height 1s ease,
+    opacity 1s ease;
 }
 
 section.works > .works-wrap > .bl-wr > .bl-r > p,

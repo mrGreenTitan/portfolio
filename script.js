@@ -1,9 +1,11 @@
 import { worksInfo } from "./javascript/works.js";
 import "./javascript/animation.js";
+import { readMore } from "./javascript/animation.js";
 
 console.log("hello");
 
 const nav = document.querySelector(".header-cont nav");
+let langSwapperElement = document.querySelector(".lang-swapper");
 
 function navClose() {
   nav.style.transform = "translateY(-200%)";
@@ -34,17 +36,26 @@ function addWrapDiv() {
       burger.appendChild(span2);
       burger.appendChild(span3);
 
+      navClose();
+      langHide();
+      isOpen = false;
+
       burger.addEventListener("click", function () {
         if (isOpen) {
           navClose();
+          langHide();
         } else {
           navOpen();
+          langShow();
         }
         isOpen = !isOpen;
       });
     }
   } else {
     nav.style.removeProperty("transform");
+    langSwapperElement.style.removeProperty("transform");
+    isOpen = false;
+
     const wrapDiv = nav.parentElement;
     if (wrapDiv.classList.contains("nav-wrap")) {
       wrapDiv.parentNode.insertBefore(nav, wrapDiv);
@@ -53,8 +64,29 @@ function addWrapDiv() {
   }
 }
 
+function langHide() {
+  langSwapperElement.style.transform = "translateY(-200%)";
+}
+
+function langShow() {
+  langSwapperElement.style.transform = "translateY(0%)";
+}
+
+function changeLang() {
+  if (window.innerWidth <= 815) {
+    langSwapperElement.classList.add("mob");
+  } else {
+    langSwapperElement.classList.remove("mob");
+  }
+}
+
 addWrapDiv();
-window.addEventListener("resize", addWrapDiv);
+changeLang();
+
+window.addEventListener("resize", function () {
+  addWrapDiv();
+  changeLang();
+});
 
 const worksWrap = document.querySelector(".works-wrap");
 
@@ -103,3 +135,5 @@ worksWrap.innerHTML = worksInfo
     `,
   )
   .join("");
+
+readMore();

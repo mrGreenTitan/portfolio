@@ -36,6 +36,12 @@
     padding: 24px 0 0;
   }
 
+  .lang-swapper.mob {
+    left: unset;
+    right: 0;
+    transform: translateY(-200%);
+  }
+
   .header-cont > .wrap-btn-swap {
     width: clamp(58px, calc(52.8387px + 1.6129vw), 66px);
     height: clamp(23px, calc(19.7742px + 1.0081vw), 28px);
@@ -91,10 +97,39 @@
   }
 
   .header-cont > .nav-wrap > nav > ul > li > a {
+    position: relative;
     display: flex;
     font-family: "Jura", sans-serif;
     font-size: 28px;
     color: white;
+    transition: opacity 0.7s ease;
+  }
+
+  .header-cont > .nav-wrap > nav > ul > li > a::after {
+    position: absolute;
+    content: "";
+    max-width: 160px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition:
+      width 1s ease,
+      opacity 0.5s ease;
+  }
+
+  .header-cont > .nav-wrap > nav > ul > li > a:hover::after,
+  .header-cont > .nav-wrap > nav > ul > li > a:active::after {
+    width: 100%;
+  }
+
+  .header-cont > .nav-wrap > nav > ul > li > a:active {
+    opacity: 0.8;
+  }
+
+  .header-cont > .nav-wrap > nav > ul > li > a:active::after {
+    opacity: 0.8;
   }
 
   section.hero {

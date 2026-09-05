@@ -53,27 +53,64 @@ function clickPageHome() {
 pageWorks.addEventListener("click", clickPageWorks);
 pageHome.addEventListener("click", clickPageHome);
 
-// Відкрити або закрити Роботи
+// Відкрити або закрити список мов
+
+const langBlock = document.querySelector(".lang-swapper");
+const currentLang = langBlock.querySelector(":scope > div > span[data-lang]");
+const langList = langBlock.querySelector("ul");
+
+langBlock.addEventListener("click", (event) => {
+  if (event.target.closest("ul")) return;
+
+  langBlock.classList.toggle("open");
+});
+
+langList.addEventListener("click", (event) => {
+  const clickedItem = event.target.closest("li[data-lang]");
+
+  if (!clickedItem) return;
+
+  const previousCode = currentLang.dataset.lang;
+  const previousName = currentLang.textContent;
+
+  currentLang.dataset.lang = clickedItem.dataset.lang;
+  currentLang.textContent = clickedItem.textContent;
+
+  clickedItem.dataset.lang = previousCode;
+  clickedItem.textContent = previousName;
+
+  langBlock.classList.remove("open");
+
+  console.log("Выбран язык:", currentLang.dataset.lang);
+});
+
+// Відкрити або закрити опис робіт
 
 const WORKS_WRAP = document.querySelector(".works-wrap");
 
-if (WORKS_WRAP) {
-  const BL_RIGHTs = WORKS_WRAP.querySelectorAll(".bl-r");
-  BL_RIGHTs.forEach((bl) => {
-    let div = bl.querySelector(".bl-r-wrap");
-    let span = bl.querySelector("span");
+export function readMore() {
+  if (WORKS_WRAP) {
+    const BL_RIGHTs = WORKS_WRAP.querySelectorAll(".bl-r");
+    BL_RIGHTs.forEach((bl) => {
+      let div = bl.querySelector(".bl-r-wrap");
+      let span = bl.querySelector("span");
 
-    if (div && span) {
-      let divHeight = div.offsetHeight + "px";
-      div.style.height = divHeight;
+      if (div && span) {
+        let divHeight = div.offsetHeight + "px";
+        div.style.height = divHeight;
 
-      span.addEventListener("click", function () {
-        if (div.style.height === "0px") {
-          div.style.height = div.scrollHeight + "px";
-        } else {
-          div.style.height = "0px";
-        }
-      });
-    }
-  });
+        span.addEventListener("click", function () {
+          if (div.style.height === "42px") {
+            div.style.height = div.scrollHeight + "px";
+            div.style.opacity = "1";
+            span.innerText = "Сховати";
+          } else {
+            div.style.height = "42px";
+            div.style.opacity = "0.3";
+            span.innerText = "Розгорнути";
+          }
+        });
+      }
+    });
+  }
 }
