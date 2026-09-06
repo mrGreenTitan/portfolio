@@ -114,3 +114,49 @@ export function readMore() {
     });
   }
 }
+
+// З'являння інпута за соціальной кнопкою
+
+const SOCIALS_BLOCK = document.querySelector(".wrap-forcont-socials");
+
+if (SOCIALS_BLOCK) {
+  const SPAN_INST = SOCIALS_BLOCK.querySelector(".inst");
+  const SPAN_VIBER = SOCIALS_BLOCK.querySelector(".viber");
+  const SPAN_TELEG = SOCIALS_BLOCK.querySelector(".teleg");
+  const SPAN_WHATS = SOCIALS_BLOCK.querySelector(".whats");
+  const WRAP_SOCIAL = document.querySelector(".wrap-inp-social");
+  const INPUT_SOCIAL = document.getElementById("inpSocial");
+  const LABEL_SOCIAL = document.getElementById("labelInpSicoal");
+  const wrap_btn = document.querySelector(".wrap-btn-sumb");
+
+  SOCIALS_BLOCK.addEventListener("click", (event) => {
+    let targetSpan = event.target.closest("span");
+
+    if (!targetSpan || !SOCIALS_BLOCK.contains(targetSpan)) return;
+
+    SOCIALS_BLOCK.querySelectorAll("span").forEach((span) => {
+      span.classList.remove("active");
+    });
+
+    targetSpan.classList.add("active");
+    wrap_btn.classList.add("soc");
+    WRAP_SOCIAL.classList.add("socshow");
+
+    if (SPAN_INST.classList.contains("active")) {
+      LABEL_SOCIAL.innerText = "Instagram";
+      INPUT_SOCIAL.placeholder = "@affa.green";
+    }
+    if (SPAN_VIBER.classList.contains("active")) {
+      LABEL_SOCIAL.innerText = "Viber";
+      INPUT_SOCIAL.placeholder = "+380 66 905 3822";
+    }
+    if (SPAN_TELEG.classList.contains("active")) {
+      LABEL_SOCIAL.innerText = "Telegram";
+      INPUT_SOCIAL.placeholder = "@WhooisFinch";
+    }
+    if (SPAN_WHATS.classList.contains("active")) {
+      LABEL_SOCIAL.innerText = "WhatsApp";
+      INPUT_SOCIAL.placeholder = "+380 66 905 3822";
+    }
+  });
+}
