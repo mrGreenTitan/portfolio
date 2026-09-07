@@ -5,6 +5,7 @@ import "./javascript/protect.js";
 
 console.log("hello");
 
+// Головна сторінка, маніпуляції з навігацією за розміров екрана
 const nav = document.querySelector(".header-cont nav");
 let langSwapperElement = document.querySelector(".lang-swapper");
 
@@ -89,6 +90,9 @@ window.addEventListener("resize", function () {
   changeLang();
 });
 
+// Сторінка з проектами
+
+// Сторінка з проектами
 const worksWrap = document.querySelector(".works-wrap");
 
 worksWrap.innerHTML = worksInfo

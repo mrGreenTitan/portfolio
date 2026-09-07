@@ -1,10 +1,19 @@
 console.log("hello, we load animation");
 
+// Перехід з сторінки Головна на Проекти та навпаки
 const header = document.querySelector("header");
 const pageHome = document.getElementById("pageHome");
 const pageWorks = document.getElementById("pageWorks");
 const pageContainerHome = document.querySelector(".p-cont-one");
 const pageContainerWorks = document.querySelector(".p-cont-two");
+
+function navListRemoveClass() {
+  let ul = pageHome.closest("ul");
+  let navAList = ul.querySelectorAll("a");
+  navAList.forEach((a) => {
+    a.classList.remove("st");
+  });
+}
 
 let isAnimating = false;
 
@@ -15,6 +24,8 @@ function clickPageWorks() {
   header.classList.add("works");
   pageContainerHome.classList.add("hide");
   pageContainerWorks.classList.add("show");
+  navListRemoveClass();
+  pageWorks.classList.add("st");
 
   pageContainerWorks.addEventListener(
     "transitionend",
@@ -31,6 +42,9 @@ function clickPageWorks() {
 function clickPageHome() {
   if (!header.classList.contains("works") || isAnimating) return;
   isAnimating = true;
+
+  navListRemoveClass();
+  pageHome.classList.add("st");
 
   pageContainerHome.style.removeProperty("display");
   requestAnimationFrame(() => {
@@ -52,6 +66,7 @@ function clickPageHome() {
 
 pageWorks.addEventListener("click", clickPageWorks);
 pageHome.addEventListener("click", clickPageHome);
+btnShowWorks.addEventListener("click", clickPageWorks);
 
 // Відкрити або закрити список мов
 
@@ -84,39 +99,95 @@ langList.addEventListener("click", (event) => {
   console.log("Выбран язык:", currentLang.dataset.lang);
 });
 
-// Відкрити або закрити опис робіт
+// Натискання по навігации Про мене, Контакти та срол до секцій
+const pageAbout = document.getElementById("pageAbout");
+const sectAbout = document.getElementById("sectAbout");
 
-const WORKS_WRAP = document.querySelector(".works-wrap");
+function scrollToAbout() {
+  navListRemoveClass();
+  pageAbout.classList.add("st");
 
-export function readMore() {
-  if (WORKS_WRAP) {
-    const BL_RIGHTs = WORKS_WRAP.querySelectorAll(".bl-r");
-    BL_RIGHTs.forEach((bl) => {
-      let div = bl.querySelector(".bl-r-wrap");
-      let span = bl.querySelector("span");
+  const formPosition = sectAbout.getBoundingClientRect().top + window.scrollY;
+  const headerOffset = 100;
+  const offsetPosition = formPosition - headerOffset;
 
-      if (div && span) {
-        let divHeight = div.offsetHeight + "px";
-        div.style.height = divHeight;
-
-        span.addEventListener("click", function () {
-          if (div.style.height === "42px") {
-            div.style.height = div.scrollHeight + "px";
-            div.style.opacity = "1";
-            span.innerText = "Сховати";
-          } else {
-            div.style.height = "42px";
-            div.style.opacity = "0.3";
-            span.innerText = "Розгорнути";
-          }
-        });
-      }
-    });
-  }
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
 }
 
-// З'являння інпута за соціальной кнопкою
+pageAbout.addEventListener("click", function (e) {
+  e.preventDefault();
 
+  if (header.classList.contains("works")) {
+    clickPageHome();
+    pageContainerHome.addEventListener("transitionend", scrollToAbout, {
+      once: true,
+    });
+  } else {
+    scrollToAbout();
+  }
+});
+
+const pageCont = document.getElementById("pageCont");
+const sectContact = document.querySelector(".contact");
+
+function scrollToCont() {
+  navListRemoveClass();
+  pageCont.classList.add("st");
+
+  const formPosition = sectContact.getBoundingClientRect().top + window.scrollY;
+  const headerOffset = 100;
+  const offsetPosition = formPosition - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+pageCont.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (header.classList.contains("works")) {
+    clickPageHome();
+    pageContainerHome.addEventListener("transitionend", scrollToCont, {
+      once: true,
+    });
+  } else {
+    scrollToCont();
+  }
+});
+
+// Відтворення анімації активності навігації та скролу, взалежності від секціі
+// Секціі
+
+const sectHero = document.querySelector(".hero");
+sectAbout;
+const sectSkill = document.querySelector(".skills");
+pageHome;
+pageAbout;
+pageWorks;
+/// ДОРОБИТИ
+
+// Натискання на кнопку створити проект на скрол до форми
+const btnCreateProject = document.getElementById("btnCreateProject");
+const clForm = document.getElementById("clForm");
+
+btnCreateProject.addEventListener("click", function (e) {
+  e.preventDefault();
+  const formPosition = clForm.getBoundingClientRect().top + window.scrollY;
+  const headerOffset = 100;
+  const offsetPosition = formPosition - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+});
+
+// З'являння інпута за соціальной кнопкою на формі
 const SOCIALS_BLOCK = document.querySelector(".wrap-forcont-socials");
 
 if (SOCIALS_BLOCK) {
@@ -168,4 +239,35 @@ if (SOCIALS_BLOCK) {
       INPUT_SOCIAL.classList.add("cl-whats");
     }
   });
+}
+
+// Відкрити або закрити опис робіт
+
+const WORKS_WRAP = document.querySelector(".works-wrap");
+
+export function readMore() {
+  if (WORKS_WRAP) {
+    const BL_RIGHTs = WORKS_WRAP.querySelectorAll(".bl-r");
+    BL_RIGHTs.forEach((bl) => {
+      let div = bl.querySelector(".bl-r-wrap");
+      let span = bl.querySelector("span");
+
+      if (div && span) {
+        let divHeight = div.offsetHeight + "px";
+        div.style.height = divHeight;
+
+        span.addEventListener("click", function () {
+          if (div.style.height === "42px") {
+            div.style.height = div.scrollHeight + "px";
+            div.style.opacity = "1";
+            span.innerText = "Сховати";
+          } else {
+            div.style.height = "42px";
+            div.style.opacity = "0.3";
+            span.innerText = "Розгорнути";
+          }
+        });
+      }
+    });
+  }
 }
