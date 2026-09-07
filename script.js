@@ -1,6 +1,7 @@
 import { worksInfo } from "./javascript/works.js";
 import "./javascript/animation.js";
 import { readMore } from "./javascript/animation.js";
+import "./javascript/protect.js";
 
 console.log("hello");
 

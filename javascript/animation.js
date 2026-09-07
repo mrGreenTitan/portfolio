@@ -129,6 +129,8 @@ if (SOCIALS_BLOCK) {
   const LABEL_SOCIAL = document.getElementById("labelInpSicoal");
   const wrap_btn = document.querySelector(".wrap-btn-sumb");
 
+  const soc_clas = ["cl-inst", "cl-viber", "cl-teleg", "cl-whats"];
+
   SOCIALS_BLOCK.addEventListener("click", (event) => {
     let targetSpan = event.target.closest("span");
 
@@ -142,21 +144,28 @@ if (SOCIALS_BLOCK) {
     wrap_btn.classList.add("soc");
     WRAP_SOCIAL.classList.add("socshow");
 
+    INPUT_SOCIAL.classList.remove(...soc_clas);
+    INPUT_SOCIAL.value = "";
+
     if (SPAN_INST.classList.contains("active")) {
       LABEL_SOCIAL.innerText = "Instagram";
       INPUT_SOCIAL.placeholder = "@affa.green";
+      INPUT_SOCIAL.classList.add("cl-inst");
     }
     if (SPAN_VIBER.classList.contains("active")) {
       LABEL_SOCIAL.innerText = "Viber";
       INPUT_SOCIAL.placeholder = "+380 66 905 3822";
+      INPUT_SOCIAL.classList.add("cl-viber");
     }
     if (SPAN_TELEG.classList.contains("active")) {
       LABEL_SOCIAL.innerText = "Telegram";
       INPUT_SOCIAL.placeholder = "@WhooisFinch";
+      INPUT_SOCIAL.classList.add("cl-teleg");
     }
     if (SPAN_WHATS.classList.contains("active")) {
       LABEL_SOCIAL.innerText = "WhatsApp";
       INPUT_SOCIAL.placeholder = "+380 66 905 3822";
+      INPUT_SOCIAL.classList.add("cl-whats");
     }
   });
 }
