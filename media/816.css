@@ -128,17 +128,18 @@
       opacity 0.5s ease;
   }
 
-  .header-cont > .nav-wrap > nav > ul > li > a:hover::after,
-  .header-cont > .nav-wrap > nav > ul > li > a:active::after {
+  .header-cont > .nav-wrap > nav > ul > li > a.st {
+    opacity: 0.8;
+  }
+
+  .header-cont > .nav-wrap > nav > ul > li > a.st::after {
+    position: absolute;
+    content: "";
     width: 100%;
-  }
-
-  .header-cont > .nav-wrap > nav > ul > li > a:active {
-    opacity: 0.8;
-  }
-
-  .header-cont > .nav-wrap > nav > ul > li > a:active::after {
-    opacity: 0.8;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
   }
 
   section.hero {

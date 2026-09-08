@@ -1,5 +1,3 @@
-console.log("hello, we load animation");
-
 // Перехід з сторінки Головна на Проекти та навпаки
 const header = document.querySelector("header");
 const pageHome = document.getElementById("pageHome");
@@ -99,6 +97,22 @@ langList.addEventListener("click", (event) => {
   console.log("Выбран язык:", currentLang.dataset.lang);
 });
 
+// Перемикач теми світла/темна
+const themeCheckbox = document.getElementById("btn-swap");
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-theme");
+  themeCheckbox.checked = true;
+}
+
+themeCheckbox.addEventListener("change", function () {
+  if (themeCheckbox.checked) {
+    document.body.classList.add("light-theme");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.body.classList.remove("light-theme");
+    localStorage.setItem("theme", "dark");
+  }
+});
 // Натискання по навігации Про мене, Контакти та срол до секцій
 const pageAbout = document.getElementById("pageAbout");
 const sectAbout = document.getElementById("sectAbout");
@@ -161,15 +175,42 @@ pageCont.addEventListener("click", function (e) {
 });
 
 // Відтворення анімації активності навігації та скролу, взалежності від секціі
-// Секціі
-
 const sectHero = document.querySelector(".hero");
-sectAbout;
-const sectSkill = document.querySelector(".skills");
-pageHome;
-pageAbout;
-pageWorks;
-/// ДОРОБИТИ
+const sectWorks = document.querySelector(".works");
+
+const sections = [
+  { section: sectHero, link: pageHome },
+  { section: sectAbout, link: pageAbout },
+  { section: sectWorks, link: pageWorks },
+  { section: sectContact, link: pageCont },
+];
+
+const observerNavigationScroll_ST = {
+  root: null,
+  rootMargin: "-100px 0px -50% 0px",
+  threshold: 0,
+};
+
+const sectionsObserver = new IntersectionObserver((entries) => {
+  if (header.classList.contains("works")) return;
+
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      let activeMatch = sections.find((s) => s.section === entry.target);
+
+      if (activeMatch) {
+        navListRemoveClass();
+        activeMatch.link.classList.add("st");
+      }
+    }
+  });
+}, observerNavigationScroll_ST);
+
+sections.forEach((items) => {
+  if (items.section) {
+    sectionsObserver.observe(items.section);
+  }
+});
 
 // Натискання на кнопку створити проект на скрол до форми
 const btnCreateProject = document.getElementById("btnCreateProject");

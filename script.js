@@ -3,8 +3,6 @@ import "./javascript/animation.js";
 import { readMore } from "./javascript/animation.js";
 import "./javascript/protect.js";
 
-console.log("hello");
-
 // Головна сторінка, маніпуляції з навігацією за розміров екрана
 const nav = document.querySelector(".header-cont nav");
 let langSwapperElement = document.querySelector(".lang-swapper");
@@ -51,6 +49,17 @@ function addWrapDiv() {
           langShow();
         }
         isOpen = !isOpen;
+      });
+
+      let li_list = wrapDiv.querySelectorAll("li");
+      li_list.forEach((li) => {
+        li.addEventListener("click", function () {
+          if (window.innerWidth <= 815) {
+            navClose();
+            langHide();
+            isOpen = false;
+          }
+        });
       });
     }
   } else {
