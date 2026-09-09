@@ -2285,6 +2285,16 @@ body.light-theme {
       rgba(120, 12, 255, 0) 95%
     );
   }
+
+  .decor-work-two > .wrap > span {
+    background: radial-gradient(
+      circle at center,
+      rgba(55, 0, 255, 0.45) 35%,
+      rgba(55, 0, 255, 0.4) 30%,
+      rgba(55, 0, 255, 0.1) 60%,
+      rgba(55, 0, 255, 0) 95%
+    );
+  }
 }
 
 /* перемикач теми початок кінець */

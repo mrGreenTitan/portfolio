@@ -93,8 +93,6 @@ langList.addEventListener("click", (event) => {
   clickedItem.textContent = previousName;
 
   langBlock.classList.remove("open");
-
-  console.log("Выбран язык:", currentLang.dataset.lang);
 });
 
 // Перемикач теми світла/темна

@@ -52,10 +52,20 @@
 
           <nav>
             <ul>
-              <li><a href="#" id="pageHome" class="st">Головна</a></li>
-              <li><a href="#" id="pageAbout">Про мене</a></li>
-              <li><a href="#" id="pageWorks">Портфоліо</a></li>
-              <li><a href="#" id="pageCont">Контакти</a></li>
+              <li>
+                <a href="#" id="pageHome" data-i18n="pageHome" class="st">
+                  Головна
+                </a>
+              </li>
+              <li>
+                <a href="#" id="pageAbout" data-i18n="pageAbout">Про мене</a>
+              </li>
+              <li>
+                <a href="#" id="pageWorks" data-i18n="pageWorks">Портфоліо</a>
+              </li>
+              <li>
+                <a href="#" id="pageCont" data-i18n="pageCont">Контакти</a>
+              </li>
             </ul>
 
             <div class="decor-nine">
@@ -137,12 +147,20 @@
 
           <div class="bl-r">
             <div class="hero-inf">
-              <div class="hero-inf-text">Олексій Глазовий</div>
+              <div class="hero-inf-text" data-i18n="heroName">
+                Олексій Глазовий
+              </div>
               <div class="hero-wrap-btn-cta">
-                <button id="btnCreateProject" type="button">
+                <button
+                  id="btnCreateProject"
+                  data-i18n="btnCreateProject"
+                  type="button"
+                >
                   Створити проект
                 </button>
-                <button id="btnShowWorks">Переглянути роботи</button>
+                <button id="btnShowWorks" data-i18n="btnShowWorks">
+                  Переглянути роботи
+                </button>
               </div>
             </div>
 
@@ -305,8 +323,8 @@
             </div>
           </div>
           <div class="bl-l">
-            <div>Про мене</div>
-            <p>
+            <div data-i18n="aboutMeTitle">Про мене</div>
+            <p data-i18n="aboutMep">
               Займаюся версткою сайтів, використовую виключно ручний формат
               роботи з HTML, CSS та JavaScript. Без конструкторів. Переношу
               макети з Figma. Отримуєте чисті, швидкі та адаптивні вебсторінки.
@@ -333,20 +351,20 @@
             </div>
           </div>
           <div class="bl-l">
-            <div>Фронтенд-навички</div>
+            <div data-i18n="skillsOne">Фронтенд-навички</div>
             <ul>
-              <li>Адаптивний вебдизайн</li>
-              <li>Підтримка різних браузерів</li>
-              <li>Робота за макетом, 1в1</li>
+              <li data-i18n="skillsOneLiOne">Адаптивний вебдизайн</li>
+              <li data-i18n="skillsOneLiTwo">Підтримка різних браузерів</li>
+              <li data-i18n="skillsOneLiThree">Робота за макетом, 1в1</li>
             </ul>
           </div>
 
           <div class="bl-r">
-            <div>Інструменти</div>
+            <div data-i18n="skillsTwo">Інструменти</div>
             <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
+              <li data-i18n="skillsTwoLiOne">HTML5</li>
+              <li data-i18n="skillsTwoLiTwo">CSS3</li>
+              <li data-i18n="skillsTwoLiThree">JavaScript</li>
             </ul>
           </div>
         </section>
@@ -385,7 +403,9 @@
           </div>
           <form id="clForm" action="#">
             <div class="wrap-cont">
-              <div class="bl-contact">Отримати консультацію</div>
+              <div class="bl-contact" data-i18n="contactTitle">
+                Отримати консультацію
+              </div>
 
               <div class="wrap-inputs">
                 <div class="wrap-inp-name">
@@ -495,8 +515,18 @@
             <div class="wrap">
               <span></span>
               <div class="texture">
-                <img src="img/decoration/works/work-texture1.webp" alt="" />
-                <img src="img/decoration/works/work-texture1l.webp" alt="" />
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture1.webp"
+                  data-dark="img/decoration/works/work-texture1.webp"
+                  src="img/decoration/works/work-texture1.webp"
+                  alt=""
+                />
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture1l.webp"
+                  data-dark="img/decoration/works/work-texture1l.webp"
+                  src="img/decoration/works/work-texture1l.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -504,8 +534,19 @@
             <div class="wrap">
               <span></span>
               <div class="texture">
-                <img src="img/decoration/works/work-texture2.webp" alt="" />
-                <img src="img/decoration/works/work-texture2l.webp" alt="" />
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture2.webp"
+                  data-dark="img/decoration/works/work-texture2.webp"
+                  src="img/decoration/works/work-texture2.webp"
+                  alt=""
+                />
+
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture2l.webp"
+                  data-dark="img/decoration/works/work-texture2l.webp"
+                  src="img/decoration/works/work-texture2l.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -513,8 +554,19 @@
             <div class="wrap">
               <span></span>
               <div class="texture">
-                <img src="img/decoration/works/work-texture3.webp" alt="" />
-                <img src="img/decoration/works/work-texture3l.webp" alt="" />
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture3.webp"
+                  data-dark="img/decoration/works/work-texture3.webp"
+                  src="img/decoration/works/work-texture3.webp"
+                  alt=""
+                />
+
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture3l.webp"
+                  data-dark="img/decoration/works/work-texture3l.webp"
+                  src="img/decoration/works/work-texture3l.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -522,8 +574,19 @@
             <div class="wrap">
               <span></span>
               <div class="texture">
-                <img src="img/decoration/works/work-texture4.webp" alt="" />
-                <img src="img/decoration/works/work-texture4l.webp" alt="" />
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture4.webp"
+                  data-dark="img/decoration/works/work-texture4.webp"
+                  src="img/decoration/works/work-texture4.webp"
+                  alt=""
+                />
+
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture4l.webp"
+                  data-dark="img/decoration/works/work-texture4l.webp"
+                  src="img/decoration/works/work-texture4l.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -531,38 +594,100 @@
             <div class="wrap">
               <span></span>
               <div class="texture">
-                <img src="img/decoration/works/work-texture5.webp" alt="" />
-                <img src="img/decoration/works/work-texture5l.webp" alt="" />
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture5.webp"
+                  data-dark="img/decoration/works/work-texture5.webp"
+                  src="img/decoration/works/work-texture5.webp"
+                  alt=""
+                />
+
+                <img
+                  data-light="img/decoration/dark/works/w-work-texture5l.webp"
+                  data-dark="img/decoration/works/work-texture5l.webp"
+                  src="img/decoration/works/work-texture5l.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <div class="work-cube-one">
-            <img src="img/decoration/works/work-сube1.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube1.webp"
+              data-dark="img/decoration/works/work-сube1.webp"
+              src="img/decoration/works/work-сube1.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-two">
-            <img src="img/decoration/works/work-сube2.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube2.webp"
+              data-dark="img/decoration/works/work-сube2.webp"
+              src="img/decoration/works/work-сube2.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-three">
-            <img src="img/decoration/works/work-сube3.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube3.webp"
+              data-dark="img/decoration/works/work-сube3.webp"
+              src="img/decoration/works/work-сube3.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-four">
-            <img src="img/decoration/works/work-сube4.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube4.webp"
+              data-dark="img/decoration/works/work-сube4.webp"
+              src="img/decoration/works/work-сube4.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-five">
-            <img src="img/decoration/works/work-сube5.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube5.webp"
+              data-dark="img/decoration/works/work-сube5.webp"
+              src="img/decoration/works/work-сube5.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-six">
-            <img src="img/decoration/works/work-сube6.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube6.webp"
+              data-dark="img/decoration/works/work-сube6.webp"
+              src="img/decoration/works/work-сube6.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-seven">
-            <img src="img/decoration/works/work-сube7.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube7.webp"
+              data-dark="img/decoration/works/work-сube7.webp"
+              src="img/decoration/works/work-сube7.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-eight">
-            <img src="img/decoration/works/work-сube8.webp" alt="" />
-            <img src="img/decoration/works/work-сube8sm.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube8.webp"
+              data-dark="img/decoration/works/work-сube8.webp"
+              src="img/decoration/works/work-сube8.webp"
+              alt=""
+            />
+
+            <img
+              data-light="img/decoration/dark/works/w-work-сube8sm.webp"
+              data-dark="img/decoration/works/work-сube8sm.webp"
+              src="img/decoration/works/work-сube8sm.webp"
+              alt=""
+            />
           </div>
           <div class="work-cube-nine">
-            <img src="img/decoration/works/work-сube9left.webp" alt="" />
+            <img
+              data-light="img/decoration/dark/works/w-work-сube9left.webp"
+              data-dark="img/decoration/works/work-сube9left.webp"
+              src="img/decoration/works/work-сube9left.webp"
+              alt=""
+            />
           </div>
           <div class="works-hero-text">Готові приклади</div>
           <div class="works-wrap">
