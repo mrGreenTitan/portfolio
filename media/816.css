@@ -74,6 +74,10 @@
     transition: background-color 0.3s ease;
   }
 
+  body.light-theme .header-cont > .nav-wrap > .burger-menu > span {
+    background-color: black;
+  }
+
   .header-cont > .nav-wrap > .burger-menu:hover > span {
     background-color: rgba(255, 255, 255, 50%);
   }
@@ -97,6 +101,10 @@
     transform: translateY(-200%);
   }
 
+  body.light-theme .header-cont > .nav-wrap > nav {
+    background-color: white;
+  }
+
   .header-cont > .nav-wrap > nav > ul {
     position: relative;
     display: flex;
@@ -114,6 +122,10 @@
     transition: opacity 0.7s ease;
   }
 
+  body.light-theme .header-cont > .nav-wrap > nav > ul > li > a {
+    color: black;
+  }
+
   .header-cont > .nav-wrap > nav > ul > li > a::after {
     position: absolute;
     content: "";
@@ -128,6 +140,10 @@
       opacity 0.5s ease;
   }
 
+  body.light-theme .header-cont > .nav-wrap > nav > ul > li > a::after {
+    background-color: black;
+  }
+
   .header-cont > .nav-wrap > nav > ul > li > a.st {
     opacity: 0.8;
   }
@@ -140,6 +156,10 @@
     background-color: white;
     left: 0;
     bottom: 0;
+  }
+
+  body.light-theme .header-cont > .nav-wrap > nav > ul > li > a.st::after {
+    background-color: black;
   }
 
   section.hero {

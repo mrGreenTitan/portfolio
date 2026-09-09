@@ -3,12 +3,14 @@ console.log("hello, we load protect");
 const inputName = document.getElementById("inpName");
 const inpPhone = document.getElementById("inpPhone");
 const inpSocial = document.getElementById("inpSocial");
+const btnCtaSubm = document.getElementById("btnCtaSubm");
 
 if (inputName) {
   const invalidCharsRegex = /[^a-zA-Zа-яА-ЯёЁіІїЇєЄ\s-]/g;
   inputName.addEventListener("input", (e) => {
     e.target.value = e.target.value.replace(invalidCharsRegex, "");
     e.target.value = e.target.value.replace(/\s+/g, " ");
+    validateForm();
   });
 }
 
@@ -17,6 +19,7 @@ if (inpPhone) {
     let value = e.target.value;
     value = value.replace(/(?!^\+)[^\d]/g, "");
     e.target.value = value;
+    validateForm();
   });
 }
 
@@ -71,6 +74,24 @@ function inpPhoneValidation(phone) {
   }
 
   return { valid: true, value: trimPhone, cleanDigits: digitsOnly };
+}
+
+// якщо 2 інпути заповнені, кнопка активна
+function validateForm() {
+  if (!btnCtaSubm) return;
+
+  const nameVal = inputName
+    ? inpNameValidation(inputName.value)
+    : { valid: false };
+  const phoneVal = inpPhone
+    ? inpPhoneValidation(inpPhone.value)
+    : { valid: false };
+
+  // Кнопка активна тільки якщо і ім'я, і телефон пройшли правила валідації
+  const isFormValid = nameVal.valid && phoneVal.valid;
+
+  btnCtaSubm.disabled = !isFormValid;
+  btnCtaSubm.classList.toggle("active", isFormValid);
 }
 
 // Функция валидации на альтернативный способ связи
@@ -129,3 +150,5 @@ function inpSocialValidation(socialInput) {
 
   return { valid: true, value: trimValue, type: "Другое" };
 }
+
+validateForm();

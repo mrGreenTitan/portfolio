@@ -98,21 +98,28 @@ langList.addEventListener("click", (event) => {
 });
 
 // Перемикач теми світла/темна
+
 const themeCheckbox = document.getElementById("btn-swap");
-if (localStorage.getItem("theme") === "light") {
-  document.body.classList.add("light-theme");
-  themeCheckbox.checked = true;
+
+function setTheme(isLight) {
+  document.body.classList.toggle("light-theme", isLight);
+
+  document.querySelectorAll("img[data-light]").forEach((img) => {
+    img.src = isLight ? img.dataset.light : img.dataset.dark;
+  });
+
+  localStorage.setItem("theme", isLight ? "light" : "dark");
 }
 
-themeCheckbox.addEventListener("change", function () {
-  if (themeCheckbox.checked) {
-    document.body.classList.add("light-theme");
-    localStorage.setItem("theme", "light");
-  } else {
-    document.body.classList.remove("light-theme");
-    localStorage.setItem("theme", "dark");
-  }
+if (localStorage.getItem("theme") === "light") {
+  themeCheckbox.checked = true;
+  setTheme(true);
+}
+
+themeCheckbox.addEventListener("change", () => {
+  setTheme(themeCheckbox.checked);
 });
+
 // Натискання по навігации Про мене, Контакти та срол до секцій
 const pageAbout = document.getElementById("pageAbout");
 const sectAbout = document.getElementById("sectAbout");
