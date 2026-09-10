@@ -289,31 +289,37 @@ if (SOCIALS_BLOCK) {
 
 // Відкрити або закрити опис робіт
 
-const WORKS_WRAP = document.querySelector(".works-wrap");
-
 export function readMore() {
-  if (WORKS_WRAP) {
-    const BL_RIGHTs = WORKS_WRAP.querySelectorAll(".bl-r");
-    BL_RIGHTs.forEach((bl) => {
-      let div = bl.querySelector(".bl-r-wrap");
-      let span = bl.querySelector("span");
+  const worksWrap = document.querySelector(".works-wrap");
+  if (!worksWrap) return;
 
-      if (div && span) {
-        let divHeight = div.offsetHeight + "px";
-        div.style.height = divHeight;
+  const blRights = worksWrap.querySelectorAll(".bl-r");
+  const itemsData = [];
+  blRights.forEach((bl) => {
+    const div = bl.querySelector(".bl-r-wrap");
+    const span = bl.querySelector("span");
+    if (div && span) {
+      itemsData.push({
+        div,
+        span,
+        height: div.offsetHeight,
+      });
+    }
+  });
 
-        span.addEventListener("click", function () {
-          if (div.style.height === "42px") {
-            div.style.height = div.scrollHeight + "px";
-            div.style.opacity = "1";
-            span.innerText = "Сховати";
-          } else {
-            div.style.height = "42px";
-            div.style.opacity = "0.3";
-            span.innerText = "Розгорнути";
-          }
-        });
+  itemsData.forEach(({ div, span, height }) => {
+    div.style.height = height + "px";
+
+    span.addEventListener("click", function () {
+      if (div.style.height === "42px") {
+        div.style.height = div.scrollHeight + "px";
+        div.style.opacity = "1";
+        span.innerText = "Сховати";
+      } else {
+        div.style.height = "42px";
+        div.style.opacity = "0.3";
+        span.innerText = "Розгорнути";
       }
     });
-  }
+  });
 }
