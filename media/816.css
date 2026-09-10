@@ -857,4 +857,14 @@
   }
 
   /* decorat elements works page end */
+
+  .decor-work-one,
+  .decor-work-two,
+  .decor-work-three,
+  .decor-work-four,
+  .decor-work-five,
+  .work-cube-one,
+  .work-cube-two {
+    display: none;
+  }
 }
