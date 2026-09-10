@@ -1044,7 +1044,7 @@ header.works {
 
 .p-cont-one,
 .p-cont-two {
-  transition: transform 0.8s ease;
+  transition: transform 1.5s ease;
 }
 
 .p-cont-one {
