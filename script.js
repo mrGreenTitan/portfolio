@@ -94,9 +94,14 @@ function changeLang() {
 addWrapDiv();
 changeLang();
 
+let lastWidth = window.innerWidth;
+
 window.addEventListener("resize", function () {
-  addWrapDiv();
-  changeLang();
+  if (window.innerWidth !== lastWidth) {
+    lastWidth = window.innerWidth;
+    addWrapDiv();
+    changeLang();
+  }
 });
 
 // Сторінка з проектами
