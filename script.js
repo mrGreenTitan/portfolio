@@ -250,7 +250,7 @@ const pageHome = document.getElementById("pageHome");
 const pageWorks = document.getElementById("pageWorks");
 const pageContainerHome = document.querySelector(".p-cont-one");
 const pageContainerWorks = document.querySelector(".p-cont-two");
-const btnShowWorks = document.getElementById("btnShowWorks"); // Додано для уникнення помилок з глобальними змінними
+const btnShowWorks = document.getElementById("btnShowWorks");
 
 function navListRemoveClass() {
   let ul = pageHome.closest("ul");

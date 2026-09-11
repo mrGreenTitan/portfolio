@@ -352,7 +352,7 @@
 
   .p-cont-one,
   .p-cont-two {
-    transition: transform 1.5s ease;
+    transition: transform 0.6s ease;
   }
 
   section.works {
