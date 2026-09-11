@@ -64,6 +64,10 @@ body {
   color: white;
 }
 
+.preload * {
+  transition: none !important;
+}
+
 h1,
 h2,
 h3,
@@ -102,11 +106,7 @@ h2 {
   margin-left: 4px;
 
   color: transparent;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(130, 130, 130, 0.8) 60%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-image: linear-gradient(to bottom, rgba(130, 130, 130, 0.8) 60%, rgba(255, 255, 255, 1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
@@ -122,11 +122,7 @@ h3 {
   font-size: 130px;
 
   color: transparent;
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
@@ -141,11 +137,7 @@ h4 {
   margin-top: -92px;
 
   color: transparent;
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
@@ -223,12 +215,7 @@ header {
   pointer-events: none;
   border-radius: inherit;
 
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.26),
-    rgba(255, 255, 255, 0.04) 55%,
-    transparent
-  );
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.04) 55%, transparent);
 }
 
 .header-cont > .lang-swapper > * {
@@ -356,12 +343,7 @@ header {
   border-radius: inherit;
   pointer-events: none;
 
-  background: linear-gradient(
-    -45deg,
-    rgb(255 255 255 / 16%) 0%,
-    transparent 55%,
-    rgb(255 255 255 / 6%) 100%
-  );
+  background: linear-gradient(-45deg, rgb(255 255 255 / 16%) 0%, transparent 55%, rgb(255 255 255 / 6%) 100%);
 }
 
 /* Активное состояние */
@@ -516,27 +498,15 @@ section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1) {
   transition: background 0.3s ease;
 }
 
-section.hero
-  > .bl-r
-  > .hero-inf
-  > .hero-wrap-btn-cta
-  > button:nth-of-type(1):hover {
+section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1):hover {
   background: rgb(255 255 255 / 100%);
 }
 
-section.hero
-  > .bl-r
-  > .hero-inf
-  > .hero-wrap-btn-cta
-  > button:nth-of-type(1):active {
+section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1):active {
   background: rgb(0 0 0 / 20%);
 }
 
-section.hero
-  > .bl-r
-  > .hero-inf
-  > .hero-wrap-btn-cta
-  > button:nth-of-type(1)::before {
+section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1)::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -544,12 +514,7 @@ section.hero
   pointer-events: none;
   border-radius: inherit;
 
-  background: linear-gradient(
-    135deg,
-    rgb(255 255 255 / 35%) 0%,
-    rgb(255 255 255 / 10%) 50%,
-    rgb(255 255 255 / 0%) 100%
-  );
+  background: linear-gradient(135deg, rgb(255 255 255 / 35%) 0%, rgb(255 255 255 / 10%) 50%, rgb(255 255 255 / 0%) 100%);
 }
 
 section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2) {
@@ -571,27 +536,15 @@ section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2) {
   transition: background 0.3s ease;
 }
 
-section.hero
-  > .bl-r
-  > .hero-inf
-  > .hero-wrap-btn-cta
-  > button:nth-of-type(2):hover {
+section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2):hover {
   background: rgb(255 255 255 / 30%);
 }
 
-section.hero
-  > .bl-r
-  > .hero-inf
-  > .hero-wrap-btn-cta
-  > button:nth-of-type(2):active {
+section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2):active {
   background: rgb(255 255 255 / 80%);
 }
 
-section.hero
-  > .bl-r
-  > .hero-inf
-  > .hero-wrap-btn-cta
-  > button:nth-of-type(2)::before {
+section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2)::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -600,12 +553,7 @@ section.hero
   border-radius: inherit;
   pointer-events: none;
 
-  background: linear-gradient(
-    -45deg,
-    rgb(255 255 255 / 14%) 0%,
-    rgb(255 255 255 / 4%) 20%,
-    transparent 70%
-  );
+  background: linear-gradient(-45deg, rgb(255 255 255 / 14%) 0%, rgb(255 255 255 / 4%) 20%, transparent 70%);
 }
 
 section.hero > .bl-r > .hero-social {
@@ -768,12 +716,7 @@ section.skills > div > ul > li::before {
   border-radius: inherit;
   pointer-events: none;
 
-  background: linear-gradient(
-    -45deg,
-    rgb(255 255 255 / 14%) 0%,
-    rgb(255 255 255 / 5%) 42%,
-    transparent 72%
-  );
+  background: linear-gradient(-45deg, rgb(255 255 255 / 14%) 0%, rgb(255 255 255 / 5%) 42%, transparent 72%);
 }
 
 section.contact {
@@ -879,37 +822,19 @@ section.contact .wrap-cont .wrap-forcontacts > .wrap-forcont-socials > span {
   cursor: pointer;
 }
 
-section.contact
-  .wrap-cont
-  .wrap-forcontacts
-  > .wrap-forcont-socials
-  > span
-  > svg
-  > path {
+section.contact .wrap-cont .wrap-forcontacts > .wrap-forcont-socials > span > svg > path {
   fill: rgb(255 255 255 / 70%);
   transition:
     fill 0.3s ease,
     transform 0.5s ease;
 }
 
-section.contact
-  .wrap-cont
-  .wrap-forcontacts
-  > .wrap-forcont-socials
-  > span:hover
-  > svg
-  > path {
+section.contact .wrap-cont .wrap-forcontacts > .wrap-forcont-socials > span:hover > svg > path {
   fill: rgb(255 255 255 / 100%);
   transform: scale(1.1);
 }
 
-section.contact
-  .wrap-cont
-  .wrap-forcontacts
-  > .wrap-forcont-socials
-  > span.active
-  > svg
-  > path {
+section.contact .wrap-cont .wrap-forcontacts > .wrap-forcont-socials > span.active > svg > path {
   fill: rgb(255 255 255 / 20%);
 }
 
@@ -1150,14 +1075,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap div > ul {
   list-style-type: disc;
 }
 
-section.works
-  > .works-wrap
-  > .bl-wr
-  > .bl-r
-  > .bl-r-wrap
-  > div
-  > ul
-  > li::marker {
+section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap > div > ul > li::marker {
   font-size: 10px;
   vertical-align: middle;
 }
@@ -1225,12 +1143,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a::before {
   z-index: -1;
   border-radius: inherit;
   pointer-events: none;
-  background: linear-gradient(
-    -45deg,
-    rgb(255 255 255 / 14%) 0%,
-    rgb(255 255 255 / 4%) 20%,
-    transparent 70%
-  );
+  background: linear-gradient(-45deg, rgb(255 255 255 / 14%) 0%, rgb(255 255 255 / 4%) 20%, transparent 70%);
 }
 
 section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
@@ -1269,13 +1182,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   height: 1000px;
   border-radius: 50%;
 
-  background: radial-gradient(
-    circle at center,
-    rgba(120, 12, 255, 0.45) 0%,
-    rgba(120, 12, 255, 0.35) 25%,
-    rgba(120, 12, 255, 0.1) 60%,
-    rgba(120, 12, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(120, 12, 255, 0.45) 0%, rgba(120, 12, 255, 0.35) 25%, rgba(120, 12, 255, 0.1) 60%, rgba(120, 12, 255, 0) 95%);
 
   pointer-events: none;
   z-index: -4;
@@ -1362,13 +1269,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   width: 1300px;
   height: 1300px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(0, 255, 255, 0.8) 0%,
-    rgba(0, 255, 255, 0.55) 25%,
-    rgba(0, 255, 255, 0.1) 60%,
-    rgba(0, 255, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(0, 255, 255, 0.8) 0%, rgba(0, 255, 255, 0.55) 25%, rgba(0, 255, 255, 0.1) 60%, rgba(0, 255, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -1413,13 +1314,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   width: 1000px;
   height: 1000px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(55, 0, 255, 0.45) 0%,
-    rgba(55, 0, 255, 0.35) 25%,
-    rgba(55, 0, 255, 0.1) 60%,
-    rgba(55, 0, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(55, 0, 255, 0.45) 0%, rgba(55, 0, 255, 0.35) 25%, rgba(55, 0, 255, 0.1) 60%, rgba(55, 0, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -1464,13 +1359,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   width: 1300px;
   height: 1300px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(55, 0, 255, 0.75) 15%,
-    rgba(55, 0, 255, 0.25) 35%,
-    rgba(55, 0, 255, 0.1) 60%,
-    rgba(55, 0, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(55, 0, 255, 0.75) 15%, rgba(55, 0, 255, 0.25) 35%, rgba(55, 0, 255, 0.1) 60%, rgba(55, 0, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -1619,13 +1508,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(0, 255, 255, 0.75) 15%,
-    rgba(0, 255, 255, 0.4) 25%,
-    rgba(0, 255, 255, 0.1) 60%,
-    rgba(0, 255, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(0, 255, 255, 0.75) 15%, rgba(0, 255, 255, 0.4) 25%, rgba(0, 255, 255, 0.1) 60%, rgba(0, 255, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -1693,13 +1576,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(55, 0, 255, 0.45) 15%,
-    rgba(55, 0, 255, 0.3) 20%,
-    rgba(55, 0, 255, 0.1) 60%,
-    rgba(55, 0, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(55, 0, 255, 0.45) 15%, rgba(55, 0, 255, 0.3) 20%, rgba(55, 0, 255, 0.1) 60%, rgba(55, 0, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -1740,13 +1617,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(120, 12, 255, 0.75) 15%,
-    rgba(120, 12, 255, 0.3) 30%,
-    rgba(120, 12, 255, 0.1) 60%,
-    rgba(120, 12, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(120, 12, 255, 0.75) 15%, rgba(120, 12, 255, 0.3) 30%, rgba(120, 12, 255, 0.1) 60%, rgba(120, 12, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -1787,13 +1658,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(55, 0, 255, 0.55) 25%,
-    rgba(55, 0, 255, 0.3) 30%,
-    rgba(55, 0, 255, 0.1) 60%,
-    rgba(55, 0, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(55, 0, 255, 0.55) 25%, rgba(55, 0, 255, 0.3) 30%, rgba(55, 0, 255, 0.1) 60%, rgba(55, 0, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -1834,13 +1699,7 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(0, 255, 255, 0.85) 25%,
-    rgba(0, 255, 255, 0.4) 30%,
-    rgba(0, 255, 255, 0.1) 60%,
-    rgba(0, 255, 255, 0) 95%
-  );
+  background: radial-gradient(circle at center, rgba(0, 255, 255, 0.85) 25%, rgba(0, 255, 255, 0.4) 30%, rgba(0, 255, 255, 0.1) 60%, rgba(0, 255, 255, 0) 95%);
   pointer-events: none;
   z-index: -4;
 }
@@ -2035,11 +1894,7 @@ body.light-theme {
   h2,
   h3,
   h4 {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(130, 130, 130, 0.8) 60%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
+    background-image: linear-gradient(to bottom, rgba(130, 130, 130, 0.8) 60%, rgba(0, 0, 0, 0.5) 100%);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
   }
 
@@ -2087,53 +1942,29 @@ body.light-theme {
     color: black;
   }
 
-  section.hero
-    > .bl-r
-    > .hero-inf
-    > .hero-wrap-btn-cta
-    > button:nth-of-type(1) {
+  section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1) {
     background-color: rgb(0 0 0 / 70%);
     color: white;
   }
 
-  section.hero
-    > .bl-r
-    > .hero-inf
-    > .hero-wrap-btn-cta
-    > button:nth-of-type(1):hover {
+  section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1):hover {
     background: #04020f;
   }
 
-  section.hero
-    > .bl-r
-    > .hero-inf
-    > .hero-wrap-btn-cta
-    > button:nth-of-type(1):active {
+  section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(1):active {
     background: rgb(0 0 0 / 40%);
   }
 
-  section.hero
-    > .bl-r
-    > .hero-inf
-    > .hero-wrap-btn-cta
-    > button:nth-of-type(2) {
+  section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2) {
     background-color: rgb(0 0 0 / 10%);
     color: black;
   }
 
-  section.hero
-    > .bl-r
-    > .hero-inf
-    > .hero-wrap-btn-cta
-    > button:nth-of-type(2):hover {
+  section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2):hover {
     background: rgb(0 0 0 / 30%);
   }
 
-  section.hero
-    > .bl-r
-    > .hero-inf
-    > .hero-wrap-btn-cta
-    > button:nth-of-type(2):active {
+  section.hero > .bl-r > .hero-inf > .hero-wrap-btn-cta > button:nth-of-type(2):active {
     background: rgb(0 0 0 / 80%);
   }
 
@@ -2184,21 +2015,11 @@ body.light-theme {
     color: black;
   }
 
-  section.contact
-    .wrap-cont
-    .wrap-forcontacts
-    > .wrap-inp-social
-    > input::placeholder {
+  section.contact .wrap-cont .wrap-forcontacts > .wrap-inp-social > input::placeholder {
     color: rgb(0 0 0 / 50%);
   }
 
-  section.contact
-    .wrap-cont
-    .wrap-forcontacts
-    > .wrap-forcont-socials
-    > span
-    > svg
-    > path {
+  section.contact .wrap-cont .wrap-forcontacts > .wrap-forcont-socials > span > svg > path {
     fill: rgb(0 0 0 / 70%);
   }
 
@@ -2253,23 +2074,11 @@ body.light-theme {
   .decor-one > .wrap > span {
     left: 55%;
     top: 42%;
-    background: radial-gradient(
-      circle at center,
-      rgba(120, 12, 255, 0.55) 10%,
-      rgba(120, 12, 255, 0.65) 25%,
-      rgba(120, 12, 255, 0.1) 50%,
-      rgba(120, 12, 255, 0) 95%
-    );
+    background: radial-gradient(circle at center, rgba(120, 12, 255, 0.55) 10%, rgba(120, 12, 255, 0.65) 25%, rgba(120, 12, 255, 0.1) 50%, rgba(120, 12, 255, 0) 95%);
   }
 
   .decor-work-two > .wrap > span {
-    background: radial-gradient(
-      circle at center,
-      rgba(55, 0, 255, 0.45) 35%,
-      rgba(55, 0, 255, 0.4) 30%,
-      rgba(55, 0, 255, 0.1) 60%,
-      rgba(55, 0, 255, 0) 95%
-    );
+    background: radial-gradient(circle at center, rgba(55, 0, 255, 0.45) 35%, rgba(55, 0, 255, 0.4) 30%, rgba(55, 0, 255, 0.1) 60%, rgba(55, 0, 255, 0) 95%);
   }
 }
 

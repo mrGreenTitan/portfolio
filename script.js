@@ -1,6 +1,9 @@
-// ==========================================
-// 1. ДАНІ ПРОЄКТІВ (раніше works.js)
-// ==========================================
+window.addEventListener("load", () => {
+  document.body.classList.remove("preload");
+});
+
+// 1. ДАНІ ПРОЄКТІВ
+
 const worksInfo = [
   {
     id: 0,
@@ -14,19 +17,10 @@ const worksInfo = [
         "зрозумілу структуру, картки турів, блок переваг, форму заявки " +
         "та мобільну адаптацію.",
       pThree: "Адаптивність та структура :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: окреме мобільне " +
-        "меню, зручні картки турів та читабельна структура на " +
-        "невеликих екранах.",
+      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручні картки турів та читабельна структура на " + "невеликих екранах.",
       pFive: "Що зроблено :",
     },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Desktop/Mobile)",
-      "Інтерактивне навігаційне меню",
-      "Інтеграція форми заявки",
-    ],
+    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Desktop/Mobile)", "Інтерактивне навігаційне меню", "Інтеграція форми заявки"],
     image: "w1.webp",
   },
   {
@@ -43,20 +37,10 @@ const worksInfo = [
         "чисту структуру, hero-екран, блок переваг, картки метрик, " +
         "секції довіри, фінальний CTA-блок та мобільну адаптацію.",
       pThree: "Адаптивність та структура :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: зручна подача " +
-        "ключових переваг, картки можливостей, читабельні метрики " +
-        "та комфортна структура на невеликих екранах.",
+      pFour: "Сайт адаптований під desktop та mobile: зручна подача " + "ключових переваг, картки можливостей, читабельні метрики " + "та комфортна структура на невеликих екранах.",
       pFive: "Що зроблено :",
     },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Desktop/Mobile)",
-      "Архітектура цільової сторінки продукту",
-      "Блок CTA з високою конверсією",
-      "Презентація фінтех-продукту",
-    ],
+    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Desktop/Mobile)", "Архітектура цільової сторінки продукту", "Блок CTA з високою конверсією", "Презентація фінтех-продукту"],
     image: "w2.webp",
   },
   {
@@ -74,20 +58,10 @@ const worksInfo = [
         "напрямки, картки спеціальних пропозицій, блок турів, галерею " +
         "локацій та мобільну адаптацію.",
       pThree: "Адаптивність та структура :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: окрема мобільна " +
-        "навігація, зручна форма вибору подорожі, адаптивні картки, " +
-        "напрямків та читабельна структура на невеликих екранах.",
+      pFour: "Сайт адаптований під desktop та mobile: окрема мобільна " + "навігація, зручна форма вибору подорожі, адаптивні картки, " + "напрямків та читабельна структура на невеликих екранах.",
       pFive: "Що зроблено :",
     },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Desktop/Mobile)",
-      "Інтерактивне навігаційне меню",
-      "Форма пошуку та бронювання",
-      "Динамічні каруселі напрямків",
-    ],
+    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Desktop/Mobile)", "Інтерактивне навігаційне меню", "Форма пошуку та бронювання", "Динамічні каруселі напрямків"],
     image: "w3.webp",
   },
   {
@@ -105,10 +79,7 @@ const worksInfo = [
         "Plans, секцію команди, контактну форму та мобільну " +
         "адаптацію.",
       pThree: "Адаптивність та структура :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: окреме мобільне " +
-        "меню, зручна структура секцій, адаптивні картки портфоліо, " +
-        "тарифів та контактна форма для невеликих екранів.",
+      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна структура секцій, адаптивні картки портфоліо, " + "тарифів та контактна форма для невеликих екранів.",
       pFive: "Що зроблено :",
     },
     ul: [
@@ -125,8 +96,7 @@ const worksInfo = [
   {
     id: 4,
     link: "https://mrgreentitan.github.io/portfolio-site-personalCV",
-    title:
-      "Andriy Bol. — Responsive Portfolio Website for a Frontend Developer",
+    title: "Andriy Bol. — Responsive Portfolio Website for a Frontend Developer",
     description: {
       pOne: "Андрій Бол. — адаптивний сайт-портфоліо :",
       pTwo:
@@ -138,20 +108,10 @@ const worksInfo = [
         "роботи, секцію проєктів, форму зв’язку та можливість " +
         "завантажити резюме/CV.",
       pThree: "Адаптивність та структура :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: окреме мобільне " +
-        "меню, зручна подача інформації про розробника, картки " +
-        "навичок, проєкти та читабельна структура на невеликих екранах.",
+      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна подача інформації про розробника, картки " + "навичок, проєкти та читабельна структура на невеликих екранах.",
       pFive: "Що зроблено :",
     },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Mobile/Desktop)",
-      "Інтерактивне навігаційне меню",
-      "Інтеграція контактної форми",
-      "Функціонал завантаження резюме/CV",
-    ],
+    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Mobile/Desktop)", "Інтерактивне навігаційне меню", "Інтеграція контактної форми", "Функціонал завантаження резюме/CV"],
     image: "w5.webp",
   },
   {
@@ -168,10 +128,7 @@ const worksInfo = [
         "подачу, велику hero-секцію, продуктовий preview, блок " +
         "переваг, секцію можливостей, порівняльну таблицю, CTA-блок та мобільну адаптацію.",
       pThree: "Адаптивність та структура :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: окреме мобільне " +
-        "меню, зручна подача інформації про продукт, читабельні " +
-        "секції переваг та комфортна структура на невеликих екранах.",
+      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна подача інформації про продукт, читабельні " + "секції переваг та комфортна структура на невеликих екранах.",
       pFive: "Що зроблено :",
     },
     ul: [
@@ -197,10 +154,7 @@ const worksInfo = [
         "преміальну атмосферу, великий hero-екран, 3D-об’єкт, блок із " +
         "проєктами, секцію послуг, картки клієнтів та контактну форму.",
       pThree: "Адаптивність та анімації :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: реалізовано окреме " +
-        "мобільне меню, зручну структуру на невеликих екранах та " +
-        "плавний скрол, який показує роботу сайту в динаміці.",
+      pFour: "Сайт адаптований під desktop та mobile: реалізовано окреме " + "мобільне меню, зручну структуру на невеликих екранах та " + "плавний скрол, який показує роботу сайту в динаміці.",
       pFive: "Що зроблено :",
     },
     ul: [
@@ -227,26 +181,16 @@ const worksInfo = [
         "подачу, зручний пошук, інтерактивну карусель з картками " +
         "напрямків, блок переваг, турпакети, блог та мобільну адаптацію.",
       pThree: "Адаптивність та структура :",
-      pFour:
-        "Сайт адаптований під desktop та mobile: окреме мобільне " +
-        "меню, зручна подача туристичних напрямків та читабельна " +
-        "структура на невеликих екранах.",
+      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна подача туристичних напрямків та читабельна " + "структура на невеликих екранах.",
       pFive: "Що зроблено :",
     },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Mobile/Desktop)",
-      "Інтерактивне навігаційне меню",
-      "Динамічна карусель напрямків",
-    ],
+    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Mobile/Desktop)", "Інтерактивне навігаційне меню", "Динамічна карусель напрямків"],
     image: "w8.webp",
   },
 ];
 
-// ==========================================
-// 2. ПЕРЕКЛАДИ (раніше translate.js)
-// ==========================================
+// 2. ПЕРЕКЛАДИ
+
 const translations = {
   ua: {
     pageHome: "Головна",
@@ -298,9 +242,8 @@ const translations = {
   },
 };
 
-// ==========================================
-// 3. АНІМАЦІЯ ТА UI ЛОГІКА (раніше animation.js)
-// ==========================================
+// 3. АНІМАЦІЯ ТА UI ЛОГІКА
+
 // Перехід з сторінки Головна на Проекти та навпаки
 const header = document.querySelector("header");
 const pageHome = document.getElementById("pageHome");
@@ -591,45 +534,38 @@ if (SOCIALS_BLOCK) {
   });
 }
 
-// Відкрити або закрити опис робіт (прибрано export)
+// Відкрити або закрити опис робіт
 function readMore() {
   const worksWrap = document.querySelector(".works-wrap");
   if (!worksWrap) return;
 
   const blRights = worksWrap.querySelectorAll(".bl-r");
-  const itemsData = [];
+
   blRights.forEach((bl) => {
     const div = bl.querySelector(".bl-r-wrap");
     const span = bl.querySelector("span");
-    if (div && span) {
-      itemsData.push({
-        div,
-        span,
-        height: div.offsetHeight,
-      });
-    }
-  });
-
-  itemsData.forEach(({ div, span, height }) => {
-    div.style.height = height + "px";
+    if (!div || !span) return;
 
     span.addEventListener("click", function () {
-      if (div.style.height === "42px") {
+      const isExpanded = div.classList.contains("active");
+
+      if (!isExpanded) {
         div.style.height = div.scrollHeight + "px";
         div.style.opacity = "1";
         span.innerText = "Сховати";
+        div.classList.add("active");
       } else {
         div.style.height = "42px";
         div.style.opacity = "0.3";
         span.innerText = "Розгорнути";
+        div.classList.remove("active");
       }
     });
   });
 }
 
-// ==========================================
-// 4. ЗАХИСТ ФОРМИ (раніше protect.js)
-// ==========================================
+// 4. ЗАХИСТ ФОРМИ
+
 const inputName = document.getElementById("inpName");
 const inpPhone = document.getElementById("inpPhone");
 const inpSocial = document.getElementById("inpSocial");
@@ -656,19 +592,13 @@ if (inpPhone) {
 if (inpSocial) {
   inpSocial.addEventListener("input", (e) => {
     let value = e.target.value;
-    if (
-      inpSocial.classList.contains("cl-inst") ||
-      inpSocial.classList.contains("cl-teleg")
-    ) {
+    if (inpSocial.classList.contains("cl-inst") || inpSocial.classList.contains("cl-teleg")) {
       if (value.length > 0 && !value.startsWith("@")) {
         value = "@" + value;
       }
       e.target.value = value.replace(/[^a-zA-Z0-9._@]/g, "");
     }
-    if (
-      inpSocial.classList.contains("cl-viber") ||
-      inpSocial.classList.contains("cl-whats")
-    ) {
+    if (inpSocial.classList.contains("cl-viber") || inpSocial.classList.contains("cl-whats")) {
       e.target.value = value.replace(/(?!^\+)[^\d]/g, "");
     }
   });
@@ -703,12 +633,8 @@ function inpPhoneValidation(phone) {
 
 function validateForm() {
   if (!btnCtaSubm) return;
-  const nameVal = inputName
-    ? inpNameValidation(inputName.value)
-    : { valid: false };
-  const phoneVal = inpPhone
-    ? inpPhoneValidation(inpPhone.value)
-    : { valid: false };
+  const nameVal = inputName ? inpNameValidation(inputName.value) : { valid: false };
+  const phoneVal = inpPhone ? inpPhoneValidation(inpPhone.value) : { valid: false };
 
   const isFormValid = nameVal.valid && phoneVal.valid;
   btnCtaSubm.disabled = !isFormValid;
@@ -743,14 +669,9 @@ function inpSocialValidation(socialInput) {
     return { valid: true, value: trimValue, type: "Telegram" };
   }
 
-  if (
-    socialInput.classList.contains("cl-viber") ||
-    socialInput.classList.contains("cl-whats")
-  ) {
+  if (socialInput.classList.contains("cl-viber") || socialInput.classList.contains("cl-whats")) {
     const digitsOnly = trimValue.replace(/\D/g, "");
-    const typeName = socialInput.classList.contains("cl-viber")
-      ? "Viber"
-      : "WhatsApp";
+    const typeName = socialInput.classList.contains("cl-viber") ? "Viber" : "WhatsApp";
     if (digitsOnly.length < 10 || digitsOnly.length > 15) {
       return {
         valid: false,
@@ -763,9 +684,8 @@ function inpSocialValidation(socialInput) {
 }
 validateForm();
 
-// ==========================================
-// 5. ОСНОВНА ЛОГІКА (раніше script.js)
-// ==========================================
+// 5. ОСНОВНА ЛОГІКА
+
 // Головна сторінка, маніпуляції з навігацією за розміром екрана
 const nav = document.querySelector(".header-cont nav");
 let langSwapperElement = document.querySelector(".lang-swapper");
@@ -844,8 +764,7 @@ function addWrapDiv() {
 }
 
 function langHide() {
-  if (langSwapperElement)
-    langSwapperElement.style.transform = "translateY(-200%)";
+  if (langSwapperElement) langSwapperElement.style.transform = "translateY(-200%)";
 }
 
 function langShow() {
