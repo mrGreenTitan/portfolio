@@ -566,64 +566,6 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
 /* page work end */
 
 /* decorat elements start */
-
-.decor-one {
-  position: absolute;
-  right: -280px;
-  top: -170px;
-  z-index: -1;
-  pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.decor-one > .wrap {
-  position: relative;
-}
-
-.decor-one > .wrap > span {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  filter: blur(40px);
-  will-change: transform;
-  transform: translate(-50%, -50%) translateZ(0);
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-
-  background: radial-gradient(circle at center, rgba(120, 12, 255, 0.45) 0%, rgba(120, 12, 255, 0.35) 25%, rgba(120, 12, 255, 0.1) 60%, rgba(120, 12, 255, 0) 95%);
-
-  pointer-events: none;
-  z-index: -4;
-}
-
-.decor-one > .wrap > .texture {
-  position: relative;
-  z-index: -5;
-  width: 872px;
-  height: 805px;
-}
-
-.decor-one > .wrap > .texture > img,
-.decor-one > .wrap > .cube > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.decor-one > .wrap > .cube {
-  position: absolute;
-  z-index: -3;
-  width: 700px;
-  height: 700px;
-  left: 25px;
-  top: -170px;
-}
-
 .decor-two {
   position: absolute;
   z-index: -1;
@@ -873,14 +815,6 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
   height: 100%;
 }
 
-.decor-nine {
-  display: none;
-  pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 /* decorat elements end */
 
 /* decorat elements works page start */
@@ -1298,47 +1232,6 @@ section.works > .works-wrap > .bl-wr > .bl-r > a:hover {
 /* перемикач теми початок */
 
 body.light-theme {
-  background-color: white;
-
-  h1 {
-    color: black;
-  }
-
-  h2,
-  h3,
-  h4 {
-    background-image: linear-gradient(to bottom, rgba(130, 130, 130, 0.8) 60%, rgba(0, 0, 0, 0.5) 100%);
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .header-cont > .lang-swapper {
-    background-color: rgb(0 0 0 / 20%);
-  }
-
-  .header-cont > .lang-swapper > div {
-    color: black;
-  }
-
-  .header-cont > .lang-swapper:not(.open):has(> div:hover) {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .header-cont > .lang-swapper > div > svg > path {
-    fill: black;
-  }
-
-  .header-cont > .lang-swapper > ul > li {
-    color: black;
-  }
-
-  .header-cont > nav > ul > li > a {
-    color: black;
-  }
-
-  .header-cont > nav > ul > li > a::after {
-    background-color: black;
-  }
-
   section.hero > .bl-r > .hero-social > ul > li > a > svg > path {
     fill: rgb(0 0 0 / 70%);
   }
@@ -1484,12 +1377,6 @@ body.light-theme {
     background-color: rgb(0 0 0 / 30%);
   }
 
-  .decor-one > .wrap > span {
-    left: 55%;
-    top: 42%;
-    background: radial-gradient(circle at center, rgba(120, 12, 255, 0.55) 10%, rgba(120, 12, 255, 0.65) 25%, rgba(120, 12, 255, 0.1) 50%, rgba(120, 12, 255, 0) 95%);
-  }
-
   .decor-work-two > .wrap > span {
     background: radial-gradient(circle at center, rgba(55, 0, 255, 0.45) 35%, rgba(55, 0, 255, 0.4) 30%, rgba(55, 0, 255, 0.1) 60%, rgba(55, 0, 255, 0) 95%);
   }
@@ -1560,9 +1447,6 @@ body.light-theme {
   }
 
   /* page work start */
-  header.works {
-    margin-bottom: clamp(-224px, calc(-113.436px - 7.692vw), -176px);
-  }
 
   section.works {
     gap: clamp(8px, calc(12.34vw - 92.56px), 85px);
@@ -1626,24 +1510,6 @@ body.light-theme {
   /* page work end */
 
   /* decorat elements start */
-
-  .decor-one {
-    right: clamp(-320px, calc(-371.515px + 6.061vw), -280px);
-    top: clamp(-320px, calc(24.0385vw - 516.1538px), -170px);
-  }
-
-  .decor-one > .wrap > .texture {
-    width: clamp(792px, calc(15.1515vw + 654px), 872px);
-    height: 805px;
-  }
-
-  .decor-one > .wrap > .cube {
-    width: clamp(400px, calc(48.0769vw + 7.693px), 700px);
-    height: clamp(400px, calc(48.0769vw + 7.693px), 700px);
-    left: clamp(25px, 304.23px - 19.39vw, 146px);
-    top: clamp(-170px, 499.23px - 46.47vw, 120px);
-  }
-
   .decor-two {
     left: clamp(-70px, -4.808vw - 0.769px, -40px);
     top: clamp(55px, -12.019vw + 228.077px, 130px);
@@ -2000,10 +1866,6 @@ body.light-theme {
   }
 
   /* page work start */
-  header.works {
-    margin-bottom: 0;
-  }
-
   .p-cont-one,
   .p-cont-two {
     transition: transform 0.6s ease;
@@ -2062,29 +1924,6 @@ body.light-theme {
   /* page work end */
 
   /* decorat elements start */
-
-  .decor-one {
-    right: clamp(-320px, -15.121vw - 196.613px, -245px);
-    top: clamp(-320px, -29.234vw - 81.452px, -175px);
-  }
-
-  .decor-one > .wrap > span {
-    width: clamp(700px, 60.484vw + 506.452px, 1000px);
-    height: clamp(700px, 60.484vw + 506.452px, 1000px);
-  }
-
-  .decor-one > .wrap > .texture {
-    width: clamp(564px, 45.968vw + 26.056rem, 792px);
-    height: clamp(530px, 55.444vw + 22.036rem, 805px);
-  }
-
-  .decor-one > .wrap > .cube {
-    width: clamp(250px, 30.242vw + 153.226px, 400px);
-    height: clamp(250px, 30.242vw + 153.226px, 400px);
-    left: clamp(122px, 4.839vw + 106.516px, 146px);
-    top: clamp(50px, 14.113vw + 4.839px, 120px);
-  }
-
   .decor-two {
     left: clamp(-40px, -3.024vw - 15.323px, -25px);
     top: clamp(48px, 15.524vw - 1.677px, 125px);
@@ -2184,61 +2023,6 @@ body.light-theme {
   .decor-eight > .cube {
     width: clamp(130px, 54.435vw - 44.194px, 400px);
   }
-
-  .decor-nine {
-    position: absolute;
-    display: block;
-    z-index: -1;
-    top: clamp(-740px, -104.839vw + 115.484px, -220px);
-    right: clamp(-500px, -56.452vw - 39.355px, -220px);
-  }
-
-  .decor-nine > .wrap {
-    position: relative;
-  }
-
-  .decor-nine > .wrap > span {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    filter: blur(40px);
-    will-change: transform;
-    transform: translate(clamp(-720px, -74.597vw - 111.29px, -350px), /* от -50% (350px) до -45% (720px) */ clamp(-736px, -77.823vw - 100.97px, -350px) /* от -50% (350px) до -46% (736px) */)
-      translateZ(0);
-    width: clamp(700px, 181.452vw + 119.355px, 1600px);
-    aspect-ratio: 1 / 1;
-    height: auto;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, rgba(120, 12, 255, 0.99) 15%, rgba(120, 12, 255, 0.55) 25%, rgba(120, 12, 255, 0.1) 60%, rgba(120, 12, 255, 0) 95%);
-    pointer-events: none;
-    z-index: -4;
-  }
-
-  .decor-nine > .wrap > .texture {
-    position: relative;
-    z-index: -5;
-    width: clamp(580px, 165.323vw + 50.968px, 1400px);
-    aspect-ratio: 1 / 1;
-    height: auto;
-  }
-
-  .decor-nine > .wrap > .texture > img,
-  .decor-nine > .wrap > .cube > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .decor-nine > .wrap > .cube {
-    position: absolute;
-    aspect-ratio: 1 / 1;
-    height: auto;
-    width: clamp(300px, 30.242vw + 203.226px, 450px);
-    left: clamp(-25px, 2.016vw - 31.452px, -15px);
-    top: clamp(560px, 104.839vw + 224.516px, 1080px);
-  }
-
   /* decorat elements end */
 
   /* decorat elements works page start */
