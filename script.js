@@ -800,7 +800,7 @@ if (worksWrap) {
             <div class="bl-l">
               <span><a href="${work.link}">${work.title}</a></span>
               <div>
-                <img src="./img/${work.image}" alt="${work.title}">
+                <img src="./img/${work.image}" alt="${work.title}" loading="lazy">
               </div>
             </div>
             <div class="bl-r">
