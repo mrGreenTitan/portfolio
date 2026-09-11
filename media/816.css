@@ -25,8 +25,7 @@
   }
 
   header {
-    margin-bottom: clamp(70px, calc(59.6774px + 3.2258vw), 86px);
-    transition: margin-bottom 0.3s ease;
+    margin-bottom: 0;
   }
 
   .header-cont {
@@ -348,7 +347,7 @@
 
   /* page work start */
   header.works {
-    margin-bottom: clamp(5px, calc(1.613vw - 6.161px), 7px);
+    margin-bottom: 0;
   }
 
   .p-cont-one,
