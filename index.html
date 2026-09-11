@@ -11,8 +11,16 @@
 
     <link rel="icon" type="image/webp" href="img/favicon.webp" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- CSS  -->
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
+
+    <!-- Медіа-стилі -->
     <link rel="stylesheet" href="media/816.css" media="(max-width: 816px)" />
     <link rel="stylesheet" href="media/1440.css" media="(min-width: 1440px)" />
   </head>
@@ -842,6 +850,6 @@
     <!-- FOOTER -->
     <footer></footer>
 
-    <script type="module" src="./script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
