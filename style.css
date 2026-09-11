@@ -1,42 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Orbitron:wght@400..900&display=swap");
-
-/*
-
-
-/* 
-Thin - 100
-Extra Light/Ultra Light - 200
-Light - 300
-Regular/Normal - 400
-Medium - 500
-SemiBold/DemiBold - 600
-Bold - 700
-Extra Bold - 800
-Black/Heavy - 900
-
-letter-spacing: 0.0012em;
-
-// <weight>: Use a value from 400 to 900
-// <uniquifier>: Use a unique and descriptive class name
-
-.orbitron-<uniquifier> {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+@font-face {
+  font-family: "Jura";
+  src: url("fonts/Jura-VariableFont_wght.woff2") format("woff2");
+  font-weight: 300 700;
   font-style: normal;
+  font-display: swap;
 }
 
-// <weight>: Use a value from 300 to 700
-// <uniquifier>: Use a unique and descriptive class name
-
-.jura-<uniquifier> {
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+@font-face {
+  font-family: "Orbitron";
+  src: url("fonts/Orbitron-VariableFont_wght.woff2") format("woff2");
+  font-weight: 400 900;
   font-style: normal;
+  font-display: swap;
 }
-
-*/
 
 * {
   margin: 0;
