@@ -9,9 +9,8 @@
     <link rel="icon" type="image/webp" href="img/favicon.webp" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media/816.css" media="(max-width: 815px)" />
-    <link rel="stylesheet" href="media/1440.css" media="(min-width: 816px) and (max-width: 1440px)" />
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media = 'all'" />
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
   </head>
   <body class="preload">
     <header>
@@ -85,7 +84,15 @@
               </div>
               <span></span>
               <div class="texture">
-                <img width="872" height="805" data-light="img/decoration/dark/w-texture1.webp" data-dark="img/decoration/texture1.webp" src="img/decoration/texture1.webp" alt="" />
+                <img
+                  width="872"
+                  height="805"
+                  data-light="img/decoration/dark/w-texture1.webp"
+                  data-dark="img/decoration/texture1.webp"
+                  src="img/decoration/texture1.webp"
+                  fetchpriority="high"
+                  alt=""
+                />
               </div>
             </div>
           </div>
