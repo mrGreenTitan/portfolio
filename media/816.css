@@ -351,6 +351,11 @@
     margin-bottom: clamp(5px, calc(1.613vw - 6.161px), 7px);
   }
 
+  .p-cont-one,
+  .p-cont-two {
+    transition: transform 1.5s ease;
+  }
+
   section.works {
     gap: clamp(8px, calc(21.333px - 1.667vw), 16px);
   }

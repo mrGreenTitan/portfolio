@@ -546,19 +546,15 @@ function readMore() {
     const span = bl.querySelector("span");
     if (!div || !span) return;
 
-    span.addEventListener("click", function () {
-      const isExpanded = div.classList.contains("active");
+    span.addEventListener("click", () => {
+      const isExpanded = div.classList.toggle("active");
 
-      if (!isExpanded) {
-        div.style.height = div.scrollHeight + "px";
-        div.style.opacity = "1";
-        span.innerText = "Сховати";
-        div.classList.add("active");
+      if (isExpanded) {
+        div.style.height = `${div.scrollHeight}px`;
+        span.textContent = "Сховати";
       } else {
-        div.style.height = "42px";
-        div.style.opacity = "0.3";
-        span.innerText = "Розгорнути";
-        div.classList.remove("active");
+        div.style.height = "";
+        span.textContent = "Розгорнути";
       }
     });
   });
