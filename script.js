@@ -1193,9 +1193,42 @@ function inpSocialValidation(socialInput) {
 }
 validateForm();
 
-// 12. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
-// 12. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
-// 12. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
+// 12. АКТИВНІСТЬ ФОРМИ ТА ВІДПРАВКА ЗАЯВКИ
+// 12. АКТИВНІСТЬ ФОРМИ ТА ВІДПРАВКА ЗАЯВКИ
+// 12. АКТИВНІСТЬ ФОРМИ ТА ВІДПРАВКА ЗАЯВКИ
+
+const form = document.getElementById("clForm");
+
+if (form) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("Дякуємо! Ваша заявка успішно надіслана.");
+        form.reset(); // Очищаем форму
+      } else {
+        alert("Помилка відправки. Спробуйте ще раз.");
+      }
+    } catch (error) {
+      console.error("Помилка мережі:", error);
+    }
+  });
+}
+
+// 13. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
+// 13. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
+// 13. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
 
 const nav = document.querySelector(".header-cont nav");
 let langSwapperElement = document.querySelector(".lang-swapper");
@@ -1303,9 +1336,9 @@ window.addEventListener("resize", function () {
   }
 });
 
-// 13. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
-// 13. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
-// 13. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
+// 14. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
+// 14. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
+// 14. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
 
 function renderWorks(curLang = "ua") {
   const worksWrap = document.querySelector(".works-wrap");
