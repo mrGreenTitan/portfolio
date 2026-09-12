@@ -353,7 +353,7 @@ section.contact .wrap-cont .wrap-btn-sumb > button.active {
 
 header.works {
   position: relative;
-  margin-bottom: -219px;
+  margin-bottom: 0;
 }
 
 .p-cont-one,

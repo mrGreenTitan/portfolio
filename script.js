@@ -1,250 +1,17 @@
+import { worksInfo, translations } from "./data.js";
+
+// 0. ПРИБИРАЭМО БЛІКИ, АНІМАЦІЇ І ТД НА ЧАС ЗАВАНТАЖ. СТОРІНКИ
+// 0. ПРИБИРАЭМО БЛІКИ, АНІМАЦІЇ І ТД НА ЧАС ЗАВАНТАЖ. СТОРІНКИ
+// 0. ПРИБИРАЭМО БЛІКИ, АНІМАЦІЇ І ТД НА ЧАС ЗАВАНТАЖ. СТОРІНКИ
+
 window.addEventListener("load", () => {
   document.body.classList.remove("preload");
 });
 
-// 1. ДАНІ ПРОЄКТІВ
+// 3. ПЕРЕХІД З ТОРІНКИ ГОЛОВНА НА ПРОЕКТИ ТА НАВПАКИ
+// 3. ПЕРЕХІД З ТОРІНКИ ГОЛОВНА НА ПРОЕКТИ ТА НАВПАКИ
+// 3. ПЕРЕХІД З ТОРІНКИ ГОЛОВНА НА ПРОЕКТИ ТА НАВПАКИ
 
-const worksInfo = [
-  {
-    id: 0,
-    link: "https://mrgreentitan.github.io/portfolio-site-travel",
-    title: "GoVista — Responsive Website for a Travel Service",
-    description: {
-      pOne: "GoVista — адаптивний сайт для туристичного сервісу :",
-      pTwo:
-        "Концепт лендингу для компанії, яка організовує авторські подорожі та активні тури. " +
-        "У проєкті зроблено акцент на велику візуальну подачу, " +
-        "зрозумілу структуру, картки турів, блок переваг, форму заявки " +
-        "та мобільну адаптацію.",
-      pThree: "Адаптивність та структура :",
-      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручні картки турів та читабельна структура на " + "невеликих екранах.",
-      pFive: "Що зроблено :",
-    },
-    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Desktop/Mobile)", "Інтерактивне навігаційне меню", "Інтеграція форми заявки"],
-    image: "w1.webp",
-  },
-  {
-    id: 1,
-    link: "https://mrgreentitan.github.io/portfolio-site-Trustworthy-App-Download",
-    title: "Etran — Responsive Website for a Fintech App",
-    description: {
-      pOne: "Etran — Responsive Website for a Fintech App :",
-      pTwo:
-        "Концепт лендингу для мобільного додатку, який допомагає, " +
-        "простіше й швидше виконувати грошові перекази, керувати, " +
-        "витратами та безпечно працювати з фінансами прямо з телефона. " +
-        "У проєкті зроблено акцент на мінімалістичну fintech-подачу, " +
-        "чисту структуру, hero-екран, блок переваг, картки метрик, " +
-        "секції довіри, фінальний CTA-блок та мобільну адаптацію.",
-      pThree: "Адаптивність та структура :",
-      pFour: "Сайт адаптований під desktop та mobile: зручна подача " + "ключових переваг, картки можливостей, читабельні метрики " + "та комфортна структура на невеликих екранах.",
-      pFive: "Що зроблено :",
-    },
-    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Desktop/Mobile)", "Архітектура цільової сторінки продукту", "Блок CTA з високою конверсією", "Презентація фінтех-продукту"],
-    image: "w2.webp",
-  },
-  {
-    id: 2,
-    link: "https://mrgreentitan.github.io/portfolio-site-Travel-Agency-Landing-Page",
-    title: "Travellian — Responsive Landing Page for a Travel Agency",
-    description: {
-      pOne: "Travellian — адаптивний лендинг для туристичного агентства :",
-      pTwo:
-        "Концепт сайту для travel-сервісу, який допомагає " +
-        "користувачам обирати напрямки, переглядати спеціальні " +
-        "пропозиції та планувати подорожі онлайн. " +
-        "У проєкті зроблено акцент на атмосферну візуальну подачу, " +
-        "великий hero-екран, форму пошуку подорожі, популярні " +
-        "напрямки, картки спеціальних пропозицій, блок турів, галерею " +
-        "локацій та мобільну адаптацію.",
-      pThree: "Адаптивність та структура :",
-      pFour: "Сайт адаптований під desktop та mobile: окрема мобільна " + "навігація, зручна форма вибору подорожі, адаптивні картки, " + "напрямків та читабельна структура на невеликих екранах.",
-      pFive: "Що зроблено :",
-    },
-    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Desktop/Mobile)", "Інтерактивне навігаційне меню", "Форма пошуку та бронювання", "Динамічні каруселі напрямків"],
-    image: "w3.webp",
-  },
-  {
-    id: 3,
-    link: "https://mrgreentitan.github.io/portfolio-site-Responsive-Startup-Website-Community-",
-    title: "Start — Responsive Landing Page for a Startup/Digital Team",
-    description: {
-      pOne: "Start — адаптивний лендинг для startup/digital-команди :",
-      pTwo:
-        "Концепт сайту для команди, яка допомагає запускати сучасні, " +
-        "сайти, digital-кампанії та сервісні сторінки для бізнесу. " +
-        "У проєкті зроблено акцент на чисту startup-подачу, яскравий " +
-        "hero-екран із фірмовою ілюстрацією, блок довіри з " +
-        "партнерами, портфоліо Selected Work, тарифні картки Service, " +
-        "Plans, секцію команди, контактну форму та мобільну " +
-        "адаптацію.",
-      pThree: "Адаптивність та структура :",
-      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна структура секцій, адаптивні картки портфоліо, " + "тарифів та контактна форма для невеликих екранів.",
-      pFive: "Що зроблено :",
-    },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Desktop/Mobile)",
-      "Інтерактивне навігаційне меню",
-      "Блок презентації портфоліо",
-      "Картки тарифів та послуг",
-      "Інтеграція контактної форми",
-    ],
-    image: "w4.webp",
-  },
-  {
-    id: 4,
-    link: "https://mrgreentitan.github.io/portfolio-site-personalCV",
-    title: "Andriy Bol. — Responsive Portfolio Website for a Frontend Developer",
-    description: {
-      pOne: "Андрій Бол. — адаптивний сайт-портфоліо :",
-      pTwo:
-        "Концепт персонального портфоліо для frontend-розробника з " +
-        "можливістю представити навички, досвід, проєкти та " +
-        "залишити заявку через контактну форму." +
-        "У проєкті зроблено акцент на мінімалістичну чорно-білу " +
-        "візуальну подачу, зрозумілу структуру, блок навичок, досвід " +
-        "роботи, секцію проєктів, форму зв’язку та можливість " +
-        "завантажити резюме/CV.",
-      pThree: "Адаптивність та структура :",
-      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна подача інформації про розробника, картки " + "навичок, проєкти та читабельна структура на невеликих екранах.",
-      pFive: "Що зроблено :",
-    },
-    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Mobile/Desktop)", "Інтерактивне навігаційне меню", "Інтеграція контактної форми", "Функціонал завантаження резюме/CV"],
-    image: "w5.webp",
-  },
-  {
-    id: 5,
-    link: "https://mrgreentitan.github.io/portfolio-site-Modern-Analytics-Product-Launch",
-    title: "Area — Responsive Landing Page for an Analytics Product Launch",
-    description: {
-      pOne: "Area — адаптивний сайт для запуску аналітичного продукту :",
-      pTwo:
-        "Концепт лендингу для сучасного analytics-продукту, який " +
-        "допомагає презентувати можливості сервісу, показати " +
-        "ключові переваги та підвести користувача до запиту demo. " +
-        "У проєкті зроблено акцент на чисту мінімалістичну візуальну " +
-        "подачу, велику hero-секцію, продуктовий preview, блок " +
-        "переваг, секцію можливостей, порівняльну таблицю, CTA-блок та мобільну адаптацію.",
-      pThree: "Адаптивність та структура :",
-      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна подача інформації про продукт, читабельні " + "секції переваг та комфортна структура на невеликих екранах.",
-      pFive: "Що зроблено :",
-    },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Mobile/Desktop)",
-      "Інтерактивне навігаційне меню",
-      "Архітектура цільової сторінки продукту",
-      "Інтеграція CTA-блоку для демо з високою конверсією",
-    ],
-    image: "w6.webp",
-  },
-  {
-    id: 6,
-    link: "https://mrgreentitan.github.io/portfolio-site-Alex-Portfolio-page/",
-    title: "Alex Portfolio — Responsive Web Developer Portfolio Website",
-    description: {
-      pOne: "Alex Portfolio — адаптивний сайт-портфоліо веброзробника :",
-      pTwo:
-        "Концепт персонального portfolio-сайту для web developer, " +
-        "який створює виразні лендинги, адаптивні інтерфейси та впізнавані бізнес-сайти. " +
-        "У проєкті зроблено акцент на сміливу візуальну подачу, темну " +
-        "преміальну атмосферу, великий hero-екран, 3D-об’єкт, блок із " +
-        "проєктами, секцію послуг, картки клієнтів та контактну форму.",
-      pThree: "Адаптивність та анімації :",
-      pFour: "Сайт адаптований під desktop та mobile: реалізовано окреме " + "мобільне меню, зручну структуру на невеликих екранах та " + "плавний скрол, який показує роботу сайту в динаміці.",
-      pFive: "Що зроблено :",
-    },
-    ul: [
-      "UI/UX дизайн",
-      "Front-End розробка",
-      "Адаптивна верстка (Mobile/Desktop)",
-      "Інтерактивне навігаційне меню",
-      "Анімації на основі прокручування (Scroll-Driven Animations)",
-      "Інтеграція контактної форми",
-    ],
-    image: "w7.webp",
-  },
-  {
-    id: 7,
-    link: "https://mrgreentitan.github.io/portfolio-site-travel-alphine/",
-    title: "WANDER.gig — Responsive Website for a Philippine Travel Service",
-    description: {
-      pOne: "WANDER.gig — адаптивний сайт для туристичного сервісу по Філіппінах :",
-      pTwo:
-        "Концепт лендингу для сервісу, який допомагає планувати " +
-        "подорожі по Філіппінах: підбирати напрямки, турпакети та " +
-        "маршрути під різні формати відпочинку. " +
-        "У проєкті зроблено акцент на велику атмосферну візуальну " +
-        "подачу, зручний пошук, інтерактивну карусель з картками " +
-        "напрямків, блок переваг, турпакети, блог та мобільну адаптацію.",
-      pThree: "Адаптивність та структура :",
-      pFour: "Сайт адаптований під desktop та mobile: окреме мобільне " + "меню, зручна подача туристичних напрямків та читабельна " + "структура на невеликих екранах.",
-      pFive: "Що зроблено :",
-    },
-    ul: ["UI/UX дизайн", "Front-End розробка", "Адаптивна верстка (Mobile/Desktop)", "Інтерактивне навігаційне меню", "Динамічна карусель напрямків"],
-    image: "w8.webp",
-  },
-];
-
-// 2. ПЕРЕКЛАДИ
-
-const translations = {
-  ua: {
-    pageHome: "Головна",
-    pageAbout: "Про мене",
-    pageWorks: "Портфоліо",
-    pageCont: "Контакти",
-    heroName: "Олексій Глазовий",
-    btnCreateProject: "Створити проєкт",
-    btnShowWorks: "Переглянути роботи",
-    aboutMeTitle: "Про мене",
-    aboutMep:
-      "Займаюся версткою сайтів, використовую виключно ручний формат роботи з HTML, CSS та JavaScript. Без конструкторів. Переношу макети з Figma. Отримуєте чисті, швидкі та адаптивні вебсторінки. Уважно відтворюю деталі дизайну, перевіряю щоб усе коректно працювало на різних екранах та браузерах з максимальною швидкістю.",
-    skillsOne: "Фронтенд-навички",
-    skillsOneLiOne: "Адаптивний вебдизайн",
-    skillsOneLiTwo: "Підтримка різних браузерів",
-    skillsOneLiThree: "Робота за макетом, 1в1",
-    skillsTwo: "Інструменти",
-    skillsTwoLiOne: "HTML5",
-    skillsTwoLiTwo: "CSS3",
-    skillsTwoLiThree: "JavaScript",
-    contactTitle: "Отримати консультацію",
-  },
-  en: {
-    pageHome: "Home",
-    pageAbout: "About Me",
-    pageWorks: "Works",
-    pageCont: "Contact",
-    heroName: "Oleksii Hlazovyi",
-    btnCreateProject: "Start a Project",
-    btnShowWorks: "View Works",
-  },
-  pl: {
-    pageHome: "Strona główna",
-    pageAbout: "O mnie",
-    pageWorks: "Portfolio",
-    pageCont: "Kontakt",
-    heroName: "Oleksij Hłazowy",
-    btnCreateProject: "Stwórz projekt",
-    btnShowWorks: "Zobacz prace",
-  },
-  ru: {
-    pageHome: "Главная",
-    pageAbout: "Обо мне",
-    pageWorks: "Работы",
-    pageCont: "Контакты",
-    heroName: "Алексей Глазовой",
-    btnCreateProject: "Создать проект",
-    btnShowWorks: "Посмотреть работы",
-  },
-};
-
-// 3. АНІМАЦІЯ ТА UI ЛОГІКА
-
-// Перехід з сторінки Головна на Проекти та навпаки
 const header = document.querySelector("header");
 const pageHome = document.getElementById("pageHome");
 const pageWorks = document.getElementById("pageWorks");
@@ -313,7 +80,10 @@ if (pageWorks) pageWorks.addEventListener("click", clickPageWorks);
 if (pageHome) pageHome.addEventListener("click", clickPageHome);
 if (btnShowWorks) btnShowWorks.addEventListener("click", clickPageWorks);
 
-// Відкрити або закрити список мов
+// 4. ВІДКРИТИ АБО ЗАКРИТИ СПИСОК МОВ
+// 4. ВІДКРИТИ АБО ЗАКРИТИ СПИСОК МОВ
+// 4. ВІДКРИТИ АБО ЗАКРИТИ СПИСОК МОВ
+
 const langBlock = document.querySelector(".lang-swapper");
 if (langBlock) {
   const currentLang = langBlock.querySelector(":scope > div > span[data-lang]");
@@ -338,10 +108,78 @@ if (langBlock) {
     clickedItem.textContent = previousName;
 
     langBlock.classList.remove("open");
+
+    let curLeng = currentLang.dataset.lang;
+
+    // Зберігаємо вибір у localStorage
+    localStorage.setItem("selectedLang", curLeng);
+
+    rendNewLeng(curLeng);
   });
+
+  function rendNewLeng(curLeng) {
+    let currentLengElements = translations[curLeng];
+
+    // переклад елементів (data-i18n)
+    let elementsAwaitTrans = document.querySelectorAll("[data-i18n]");
+    elementsAwaitTrans.forEach((element) => {
+      let key = element.dataset.i18n;
+
+      if (key.includes(".")) {
+        let keys = key.split(".");
+        let value = currentLengElements;
+        keys.forEach((k) => {
+          if (value) value = value[k];
+        });
+        if (value) element.innerHTML = value;
+      } else {
+        if (currentLengElements && currentLengElements[key]) {
+          element.innerHTML = currentLengElements[key];
+        }
+      }
+    });
+
+    // Додатковий переклад плейсхолдера в інпутах (data-i18n-placeholder)
+    let inputsAwaitTrans = document.querySelectorAll("[data-i18n-placeholder]");
+    inputsAwaitTrans.forEach((input) => {
+      let key = input.dataset.i18nPlaceholder;
+      if (currentLengElements && currentLengElements[key]) {
+        input.placeholder = currentLengElements[key];
+      }
+    });
+
+    // Оновлення карток із портфоліо
+    renderWorks(curLeng);
+  }
+
+  // При перезавантаж. повертаємо обранну мову - локаСторедж
+  const savedLang = localStorage.getItem("selectedLang") || "ua";
+
+  if (currentLang && currentLang.dataset.lang !== savedLang) {
+    const langItems = langList.querySelectorAll("li[data-lang]");
+
+    langItems.forEach((item) => {
+      if (item.dataset.lang === savedLang) {
+        const tempCode = currentLang.dataset.lang;
+        const tempText = currentLang.textContent;
+
+        currentLang.dataset.lang = item.dataset.lang;
+        currentLang.textContent = item.textContent;
+
+        item.dataset.lang = tempCode;
+        item.textContent = tempText;
+      }
+    });
+  }
+
+  // Перший запуск при оновленні сторінкі обо відкриванні
+  rendNewLeng(savedLang);
 }
 
-// Перемикач теми світла/темна
+// 5. ПЕРЕМИКАЧ ТЕМИ СВІТЛА/ТЕМНА
+// 5. ПЕРЕМИКАЧ ТЕМИ СВІТЛА/ТЕМНА
+// 5. ПЕРЕМИКАЧ ТЕМИ СВІТЛА/ТЕМНА
+
 const themeCheckbox = document.getElementById("btn-swap");
 function setTheme(isLight) {
   document.body.classList.toggle("light-theme", isLight);
@@ -361,7 +199,10 @@ if (themeCheckbox) {
   });
 }
 
-// Натискання по навігации Про мене, Контакти та срол до секцій
+// 6. НАТИСКАННЯ ПО НАВІГАЦІІ/ ПРО МЕНЕ/ КОНТАКТИ ТА СКРОЛЛ ДО СЕКЦІЙ
+// 6. НАТИСКАННЯ ПО НАВІГАЦІІ/ ПРО МЕНЕ/ КОНТАКТИ ТА СКРОЛЛ ДО СЕКЦІЙ
+// 6. НАТИСКАННЯ ПО НАВІГАЦІІ/ ПРО МЕНЕ/ КОНТАКТИ ТА СКРОЛЛ ДО СЕКЦІЙ
+
 const pageAbout = document.getElementById("pageAbout");
 const sectAbout = document.getElementById("sectAbout");
 
@@ -424,7 +265,10 @@ if (pageCont && sectContact) {
   });
 }
 
-// Відтворення анімації активності навігації та скролу, взалежності від секціі
+// 7. ВІДТВОРЕННЯ АНІМАЦІІ АКТИВНОСТІ НА МЕНЮ НАВІГАЦІІ ТА СКРОЛУ, ВЗАЛЕЖНОСТІ ВІД СЕКЦІЇ
+// 7. ВІДТВОРЕННЯ АНІМАЦІІ АКТИВНОСТІ НА МЕНЮ НАВІГАЦІІ ТА СКРОЛУ, ВЗАЛЕЖНОСТІ ВІД СЕКЦІЇ
+// 7. ВІДТВОРЕННЯ АНІМАЦІІ АКТИВНОСТІ НА МЕНЮ НАВІГАЦІІ ТА СКРОЛУ, ВЗАЛЕЖНОСТІ ВІД СЕКЦІЇ
+
 const sectHero = document.querySelector(".hero");
 const sectWorks = document.querySelector(".works");
 
@@ -461,7 +305,10 @@ sections.forEach((items) => {
   }
 });
 
-// Натискання на кнопку створити проект на скрол до форми
+// 8. НАТИСКАННЯ НА КНОПКУ СТВОРИТИ ПРОЕКТ ТА СКРОЛ ДО ФОРМИ
+// 8. НАТИСКАННЯ НА КНОПКУ СТВОРИТИ ПРОЕКТ ТА СКРОЛ ДО ФОРМИ
+// 8. НАТИСКАННЯ НА КНОПКУ СТВОРИТИ ПРОЕКТ ТА СКРОЛ ДО ФОРМИ
+
 const btnCreateProject = document.getElementById("btnCreateProject");
 const clForm = document.getElementById("clForm");
 
@@ -479,7 +326,10 @@ if (btnCreateProject && clForm) {
   });
 }
 
-// З'являння інпута за соціальной кнопкою на формі
+// 9. АНІМАЦІЯ ІНПУТА ЗА СОЦІАЛЬНОЮ КНОПКУЮ У ФОРМІ
+// 9. АНІМАЦІЯ ІНПУТА ЗА СОЦІАЛЬНОЮ КНОПКУЮ У ФОРМІ
+// 9. АНІМАЦІЯ ІНПУТА ЗА СОЦІАЛЬНОЮ КНОПКУЮ У ФОРМІ
+
 const SOCIALS_BLOCK = document.querySelector(".wrap-forcont-socials");
 if (SOCIALS_BLOCK) {
   const SPAN_INST = SOCIALS_BLOCK.querySelector(".inst");
@@ -534,10 +384,20 @@ if (SOCIALS_BLOCK) {
   });
 }
 
-// Відкрити або закрити опис робіт
+// 10. ВІДКИРИТ/ЗАКРИТИ ОПИС РОБІТ У ПОРТФОЛІО
+// 10. ВІДКИРИТ/ЗАКРИТИ ОПИС РОБІТ У ПОРТФОЛІО
+// 10. ВІДКИРИТ/ЗАКРИТИ ОПИС РОБІТ У ПОРТФОЛІО
+
 function readMore() {
   const worksWrap = document.querySelector(".works-wrap");
   if (!worksWrap) return;
+
+  // Актуальна мова із перемикача
+  const currentLangSpan = document.querySelector(".lang-swapper span[data-lang]");
+  const curLang = currentLangSpan ? currentLangSpan.dataset.lang : "ua";
+
+  // Берем переклади за актуальною мовою
+  const currentDict = translations[curLang] || translations["ua"];
 
   const blRights = worksWrap.querySelectorAll(".bl-r");
 
@@ -546,21 +406,30 @@ function readMore() {
     const span = bl.querySelector("span");
     if (!div || !span) return;
 
+    // Ставимо початкой текст при відтворенні сторінки, в залежності від Розгорнути/Сховати
+    if (div.classList.contains("active")) {
+      span.textContent = currentDict.spAcord.open;
+    } else {
+      span.textContent = currentDict.spAcord.close;
+    }
+
     span.addEventListener("click", () => {
       const isExpanded = div.classList.toggle("active");
 
       if (isExpanded) {
         div.style.height = `${div.scrollHeight}px`;
-        span.textContent = "Сховати";
+        span.textContent = currentDict.spAcord.open;
       } else {
         div.style.height = "";
-        span.textContent = "Розгорнути";
+        span.textContent = currentDict.spAcord.close;
       }
     });
   });
 }
 
-// 4. ЗАХИСТ ФОРМИ
+// 11. ЗАХИСТ ТА ПЕРЕВІРКИ ФОРМ НА JS
+// 11. ЗАХИСТ ТА ПЕРЕВІРКИ ФОРМ НА JS
+// 11. ЗАХИСТ ТА ПЕРЕВІРКИ ФОРМ НА JS
 
 const inputName = document.getElementById("inpName");
 const inpPhone = document.getElementById("inpPhone");
@@ -680,9 +549,10 @@ function inpSocialValidation(socialInput) {
 }
 validateForm();
 
-// 5. ОСНОВНА ЛОГІКА
+// 12. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
+// 12. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
+// 12. АДАПТИВНІТЬ НАВІГАЦІЇ, МЕНЮ ЗА РОЗМІРОВ ЕКРАНА
 
-// Головна сторінка, маніпуляції з навігацією за розміром екрана
 const nav = document.querySelector(".header-cont nav");
 let langSwapperElement = document.querySelector(".lang-swapper");
 
@@ -789,40 +659,52 @@ window.addEventListener("resize", function () {
   }
 });
 
-// Сторінка з проектами
-const worksWrap = document.querySelector(".works-wrap");
+// 13. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
+// 13. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
+// 13. ГЕНЕРАЦІЯ КОНТЕНТУ ДЛЯ ПОРФОЛІО З ОБРАНОЮ МОВОЮ
 
-if (worksWrap) {
-  worksWrap.innerHTML = worksInfo
-    .map(
-      (work) => `
+function renderWorks(curLang = "ua") {
+  const worksWrap = document.querySelector(".works-wrap");
+
+  if (worksWrap) {
+    // Беремо переклади напряму з основного глобального об'єкта translations
+    const currentDict = translations[curLang] || translations["ua"];
+
+    worksWrap.innerHTML = worksInfo
+      .map((work) => {
+        const data = work[curLang] || work["ua"];
+
+        return `
           <div class="bl-wr">
             <div class="bl-l">
-              <span><a href="${work.link}">${work.title}</a></span>
+              <span><a href="${work.link}">${data.title}</a></span>
               <div>
-                <img src="./img/${work.image}" alt="${work.title}" loading="lazy">
+                <img src="./img/${work.image}" alt="${data.title}" loading="lazy">
               </div>
             </div>
             <div class="bl-r">
-              <p>${work.description.pOne}</p>
-              <p>${work.description.pTwo}</p>
+              <p>${data.description.pOne}</p>
+              <p>${data.description.pTwo}</p>
               <div class="bl-r-wrap">
-              <p>${work.description.pThree}</p>
-              <p>${work.description.pFour}</p>
-              <p>${work.description.pFive}</p>
-              <div>
-                <ul>
-                  ${work.ul.map((item) => `<li>${item}</li>`).join("")}
-                </ul>
+                <p>${data.description.pThree}</p>
+                <p>${data.description.pFour}</p>
+                <p>${data.description.pFive}</p>
+                <div>
+                  <ul>
+                    ${data.ul.map((item) => `<li>${item}</li>`).join("")}
+                  </ul>
+                </div>
               </div>
-              </div>
-              <span>Розгорнути</span>
-              <a href="${work.link}">ВІДКРИТИ САЙТ</a>
+              <span class="read-more-btn" data-i18n="spAcord.close">${currentDict.spAcord.close}</span>
+              <a href="${work.link}" data-i18n="btnOpenSite">${currentDict.btnOpenSite}</a>
             </div>
           </div>
-        `,
-    )
-    .join("");
+        `;
+      })
+      .join("");
 
-  readMore();
+    if (typeof readMore === "function") {
+      readMore();
+    }
+  }
 }

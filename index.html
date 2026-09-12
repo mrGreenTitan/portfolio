@@ -289,17 +289,17 @@
 
               <div class="wrap-inputs">
                 <div class="wrap-inp-name">
-                  <label for="inpName">Ім'я</label>
-                  <input id="inpName" type="text" placeholder="Вкажіть своє Ім'я" required />
+                  <label data-i18n="inpNameLabel" for="inpName">Ім'я</label>
+                  <input id="inpName" type="text" data-i18n-placeholder="namePlaceholder" placeholder="Вкажіть своє Ім'я" required />
                 </div>
                 <div class="wrap-inp-phone">
-                  <label for="inpPhone">Номер телефону</label>
-                  <input id="inpPhone" type="text" placeholder="Вкажіть свій телефон" />
+                  <label data-i18n="inpPhoneLabel" for="inpPhone">Номер телефону</label>
+                  <input id="inpPhone" type="text" data-i18n-placeholder="phonePlaceholder" placeholder="Вкажіть свій телефон" />
                 </div>
               </div>
 
               <div class="wrap-forcontacts">
-                <div class="wrap-forcont-text">
+                <div class="wrap-forcont-text" data-i18n="forCont">
                   Не телефонувати?
                   <br />
                   Вкажіть бажаний зв'язок.
@@ -349,7 +349,7 @@
               </div>
 
               <div class="wrap-btn-sumb">
-                <button id="btnCtaSubm" disabled>Очікувати</button>
+                <button id="btnCtaSubm" data-i18n="btnCtaSubm" disabled>Очікувати</button>
               </div>
             </div>
           </form>
@@ -596,7 +596,7 @@
               alt=""
             />
           </div>
-          <div class="works-hero-text">Готові приклади</div>
+          <div class="works-hero-text" data-i18n="workHeroTitle">Готові приклади</div>
           <div class="works-wrap">
             <div class="bl-wr">
               <div class="bl-l">
@@ -606,7 +606,7 @@
                 <div><img src="" alt="" loading="lazy" /></div>
               </div>
               <div class="bl-r">
-                <p>Концепт:</p>
+                <p data-i18n="pTextOne">GoVista — адаптивний сайт для туристичного сервісу :</p>
                 <p>
                   Концепт лендингу для компанії, яка організовує авторські бутик-тури та активні подорожі. Проєкт акцентує увагу на масштабній візуальній подачі, чіткій структурі, динамічних картках
                   турів, блоці ключових переваг, формі заявки та повній мобільній адаптації.
@@ -628,14 +628,14 @@
                     </ul>
                   </div>
                 </div>
-                <span>Розгорнути</span>
-                <a href="#">ВІДКРИТИ САЙТ</a>
+                <span data-i18n="spAcord">Розгорнути</span>
+                <a href="#" data-i18n="btnOpenSite">ВІДКРИТИ САЙТ</a>
               </div>
             </div>
           </div>
         </section>
       </div>
     </main>
-    <script src="script.js" defer></script>
+    <script type="module" src="./script.js" defer></script>
   </body>
 </html>
