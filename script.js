@@ -760,6 +760,8 @@ if (langBlock) {
   });
 
   function rendNewLeng(curLeng) {
+    document.documentElement.setAttribute("lang", curLeng);
+
     let currentLengElements = translations[curLeng];
 
     // переклад елементів (data-i18n)
