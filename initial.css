@@ -153,7 +153,7 @@ h4 {
 }
 
 header {
-  margin-bottom: 0;
+  margin-bottom: -219px;
   transition: margin-bottom 0.8s ease;
 }
 
@@ -737,7 +737,8 @@ body.light-theme {
   }
 
   header {
-    margin-bottom: 0;
+    margin-bottom: clamp(-219px, calc(64.8462px - 19.7115vw), -96px);
+    transition: margin-bottom 0.5s ease;
   }
 
   .header-cont {
@@ -1055,7 +1056,7 @@ body.light-theme {
   }
   /* page work start */
   header.works {
-    margin-bottom: 0px !important;
+    margin-bottom: 0;
   }
   /* page work end */
   /* decorat elements start */
