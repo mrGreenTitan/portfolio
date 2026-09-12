@@ -468,6 +468,10 @@ section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap {
     opacity 1s ease;
 }
 
+section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap.active {
+  opacity: 1;
+}
+
 section.works > .works-wrap > .bl-wr > .bl-r > p,
 section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap > p,
 section.works > .works-wrap > .bl-wr > .bl-r > .bl-r-wrap div li {
